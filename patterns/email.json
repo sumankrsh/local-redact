@@ -1,0 +1,31 @@
+{
+  "id": "EMAIL",
+  "label": "Email address",
+  "order": 1,
+  "priority": 70,
+  "region": "Global",
+  "validation": "Strict format: local part, @, domain labels, letters-only top-level domain",
+  "sources": [
+    "https://html.spec.whatwg.org/multipage/input.html#valid-e-mail-address"
+  ],
+  "notes": "A narrower version of the WHATWG HTML rule: it requires a dot in the domain and leaves out rarely used local-part symbols so that surrounding quotes and brackets are not swallowed.",
+  "patterns": [
+    {
+      "name": "email",
+      "regex": "(?<![A-Za-z0-9._%+-])[A-Za-z0-9_%+-](?:[A-Za-z0-9._%+-]{0,62}[A-Za-z0-9_%+-])?@[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?(?:\\.[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?)*\\.[A-Za-z]{2,63}(?![A-Za-z0-9-]|\\.[A-Za-z0-9])"
+    }
+  ],
+  "examples": {
+    "valid": [
+      "layla.haddad@example.com",
+      "ops+alerts@mail.example.co.uk",
+      "a_b@sub.example.ae"
+    ],
+    "invalid": [
+      "not-an-email@",
+      "user@localhost",
+      "@example.com",
+      "user@example.c0m"
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "EMIRATES_ID",
+  "label": "Emirates ID",
+  "order": 5,
+  "priority": 90,
+  "region": "UAE",
+  "validation": "15 digits as 784-YYYY-NNNNNNN-C; starts with 784; Luhn check digit",
+  "sources": [
+    "https://learn.microsoft.com/en-us/purview/sit-defn-uae-identity-card-number",
+    "https://unstats.un.org/unsd/methodology/m49/"
+  ],
+  "patterns": [
+    {
+      "name": "emirates_id",
+      "regex": "(?<![0-9A-Za-z])784[ -]?[0-9]{4}[ -]?[0-9]{7}[ -]?[0-9](?![0-9A-Za-z])",
+      "validator": "luhn",
+      "params": {
+        "min_length": 15,
+        "max_length": 15,
+        "prefixes": [
+          "784"
+        ]
+      }
+    }
+  ],
+  "examples": {
+    "valid": [
+      "784-1990-1234567-6",
+      "784198776543211",
+      "784 2005 0000001 1"
+    ],
+    "invalid": [
+      "784-1990-1234567-5",
+      "785-1990-1234567-6",
+      "784-1990-123456-6"
+    ]
+  },
+  "notes": "784 is the UAE's ISO 3166 / UN M49 country code. The issuer does not publish the check-digit rule; the Luhn rule comes from data-loss-prevention vendor documentation (Microsoft Purview). The YYYY part is usually the birth year but this is not checked."
+}

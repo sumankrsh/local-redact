@@ -1,0 +1,7 @@
+2026-10-14T09:12:03Z INFO  api-gateway request_id=7f3a2c user=layla.haddad@example.com ip=203.0.113.45 path=/v1/claims/upload status=200
+2026-10-14T09:12:04Z WARN  auth token refresh failed for user=layla.haddad@example.com client_ip=2001:db8:85a3::8a2e:370:7334
+2026-10-14T09:12:04Z DEBUG headers: Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZ2VudC00NDE3Iiwicm9sZSI6ImNsYWltcyJ9.ZXhhbXBsZS1zaWduYXR1cmUtb25seQ
+2026-10-14T09:12:05Z ERROR payment-service charge declined card=4111 1111 1111 1111 amount=AED 1,250.00 contact=+971 50 000 1234
+2026-10-14T09:12:07Z ERROR s3-sync AccessDenied with key AKIAIOSFODNN7EXAMPLE from host 10.24.3.17
+2026-10-14T09:12:09Z INFO  support ticket SUP-48213 opened by ravi.menon@example.org, callback 98765 43210
+2026-10-14T09:12:11Z INFO  healthcheck ok version=2.14.0 uptime=86400s

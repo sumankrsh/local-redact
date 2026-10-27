@@ -1,0 +1,21 @@
+[
+  {
+    "id": "support-log",
+    "title": "Support log",
+    "file": "support-log.txt"
+  },
+  {
+    "id": "claim-note",
+    "title": "Claim note",
+    "file": "claim-note.txt",
+    "custom": [
+      { "type": "CLAIM_NO", "regex": "CLM-[0-9]{4}-[0-9]{7}" },
+      { "type": "POLICY_NO", "regex": "POL-[0-9]{4}-[0-9]{6}" }
+    ]
+  },
+  {
+    "id": "email-thread",
+    "title": "Email thread",
+    "file": "email-thread.txt"
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "id": "SAUDI_ID",
+  "label": "Saudi national ID / Iqama",
+  "order": 6,
+  "priority": 90,
+  "region": "Saudi Arabia",
+  "validation": "10 digits; first digit 1 (citizen) or 2 (resident, Iqama); Luhn check digit",
+  "sources": [
+    "https://rulebook.sama.gov.sa/en/node/2420",
+    "https://github.com/alhazmy13/Saudi-ID-Validator/blob/master/validateSAID.py"
+  ],
+  "notes": "SAMA documents the 10-digit structure (first digit 1 = citizen, 2 = resident; last digit is a verification digit) but not the formula. The Luhn rule used here is the widely used community rule (see the validator linked). About 1 in 10 random 10-digit numbers starting with 1 or 2 also pass, including some Unix timestamps; turn this type off for logs full of epoch times.",
+  "patterns": [
+    {
+      "name": "saudi_id",
+      "regex": "(?<![0-9A-Za-z])[12][0-9]{9}(?![0-9A-Za-z])",
+      "validator": "luhn",
+      "params": {
+        "min_length": 10,
+        "max_length": 10,
+        "prefixes": [
+          "1",
+          "2"
+        ]
+      }
+    }
+  ],
+  "examples": {
+    "valid": [
+      "1234567897",
+      "2987654320"
+    ],
+    "invalid": [
+      "1234567890",
+      "3234567897",
+      "123456789"
+    ]
+  }
+}

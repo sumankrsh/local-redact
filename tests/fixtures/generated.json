@@ -1,0 +1,3542 @@
+[
+  {
+    "name": "email-valid-0",
+    "text": " rwxsbsv.bpr@example.org ",
+    "expect": [
+      [
+        "EMAIL",
+        "rwxsbsv.bpr@example.org"
+      ]
+    ]
+  },
+  {
+    "name": "email-valid-1",
+    "text": "(aohtgsag@example.co.in)",
+    "expect": [
+      [
+        "EMAIL",
+        "aohtgsag@example.co.in"
+      ]
+    ]
+  },
+  {
+    "name": "email-valid-2",
+    "text": "lvvggotgb@example.com.",
+    "expect": [
+      [
+        "EMAIL",
+        "lvvggotgb@example.com"
+      ]
+    ]
+  },
+  {
+    "name": "email-valid-3",
+    "text": "id=pbur_eey@example.org;",
+    "expect": [
+      [
+        "EMAIL",
+        "pbur_eey@example.org"
+      ]
+    ]
+  },
+  {
+    "name": "email-valid-4",
+    "text": "'mwfzhpfh_mun@mail.example.ae'",
+    "expect": [
+      [
+        "EMAIL",
+        "mwfzhpfh_mun@mail.example.ae"
+      ]
+    ]
+  },
+  {
+    "name": "email-valid-5",
+    "text": "lzfhkdkp+xdc@example.co.in,",
+    "expect": [
+      [
+        "EMAIL",
+        "lzfhkdkp+xdc@example.co.in"
+      ]
+    ]
+  },
+  {
+    "name": "email-valid-6",
+    "text": "\tqjuebuzzjf@mail.example.ae\n",
+    "expect": [
+      [
+        "EMAIL",
+        "qjuebuzzjf@mail.example.ae"
+      ]
+    ]
+  },
+  {
+    "name": "email-valid-7",
+    "text": "رقم jadi+xnz@mail.example.ae شكرا",
+    "expect": [
+      [
+        "EMAIL",
+        "jadi+xnz@mail.example.ae"
+      ]
+    ]
+  },
+  {
+    "name": "email-valid-8",
+    "text": " szxxvmri.lte@example.com ",
+    "expect": [
+      [
+        "EMAIL",
+        "szxxvmri.lte@example.com"
+      ]
+    ]
+  },
+  {
+    "name": "email-valid-9",
+    "text": "(zemxojsb@example.com)",
+    "expect": [
+      [
+        "EMAIL",
+        "zemxojsb@example.com"
+      ]
+    ]
+  },
+  {
+    "name": "email-valid-10",
+    "text": "drcgtvmg_uwi@example.co.in.",
+    "expect": [
+      [
+        "EMAIL",
+        "drcgtvmg_uwi@example.co.in"
+      ]
+    ]
+  },
+  {
+    "name": "email-valid-11",
+    "text": "id=osier+hgd@example.org;",
+    "expect": [
+      [
+        "EMAIL",
+        "osier+hgd@example.org"
+      ]
+    ]
+  },
+  {
+    "name": "email-valid-12",
+    "text": "'dqrau+dje@example.org'",
+    "expect": [
+      [
+        "EMAIL",
+        "dqrau+dje@example.org"
+      ]
+    ]
+  },
+  {
+    "name": "email-valid-13",
+    "text": "iow.azx@example.com,",
+    "expect": [
+      [
+        "EMAIL",
+        "iow.azx@example.com"
+      ]
+    ]
+  },
+  {
+    "name": "email-valid-14",
+    "text": "\tdiv.spo@mail.example.ae\n",
+    "expect": [
+      [
+        "EMAIL",
+        "div.spo@mail.example.ae"
+      ]
+    ]
+  },
+  {
+    "name": "email-valid-15",
+    "text": "رقم ugvhcfr_vxs@example.co.in شكرا",
+    "expect": [
+      [
+        "EMAIL",
+        "ugvhcfr_vxs@example.co.in"
+      ]
+    ]
+  },
+  {
+    "name": "email-valid-16",
+    "text": " gaufal+wzo@example.org ",
+    "expect": [
+      [
+        "EMAIL",
+        "gaufal+wzo@example.org"
+      ]
+    ]
+  },
+  {
+    "name": "email-valid-17",
+    "text": "(ofoyvkbpveq@example.com)",
+    "expect": [
+      [
+        "EMAIL",
+        "ofoyvkbpveq@example.com"
+      ]
+    ]
+  },
+  {
+    "name": "email-valid-18",
+    "text": "mylpa+oqk@mail.example.ae.",
+    "expect": [
+      [
+        "EMAIL",
+        "mylpa+oqk@mail.example.ae"
+      ]
+    ]
+  },
+  {
+    "name": "email-valid-19",
+    "text": "id=cpdjwc.dec@example.co.in;",
+    "expect": [
+      [
+        "EMAIL",
+        "cpdjwc.dec@example.co.in"
+      ]
+    ]
+  },
+  {
+    "name": "email-valid-20",
+    "text": "'mjmscdlqz@example.org'",
+    "expect": [
+      [
+        "EMAIL",
+        "mjmscdlqz@example.org"
+      ]
+    ]
+  },
+  {
+    "name": "email-valid-21",
+    "text": "ujkk+xtd@mail.example.ae,",
+    "expect": [
+      [
+        "EMAIL",
+        "ujkk+xtd@mail.example.ae"
+      ]
+    ]
+  },
+  {
+    "name": "email-valid-22",
+    "text": "\tznrvixrsf@mail.example.ae\n",
+    "expect": [
+      [
+        "EMAIL",
+        "znrvixrsf@mail.example.ae"
+      ]
+    ]
+  },
+  {
+    "name": "email-valid-23",
+    "text": "رقم osykk.ymj@example.org شكرا",
+    "expect": [
+      [
+        "EMAIL",
+        "osykk.ymj@example.org"
+      ]
+    ]
+  },
+  {
+    "name": "email-invalid-0",
+    "text": " wrfqkb@example ",
+    "expect": []
+  },
+  {
+    "name": "email-invalid-1",
+    "text": " njiisx@example ",
+    "expect": []
+  },
+  {
+    "name": "email-invalid-2",
+    "text": " heoxvr@example ",
+    "expect": []
+  },
+  {
+    "name": "email-invalid-3",
+    "text": " alevfs@example ",
+    "expect": []
+  },
+  {
+    "name": "email-invalid-4",
+    "text": " mjmzxa@example ",
+    "expect": []
+  },
+  {
+    "name": "email-invalid-5",
+    "text": " uyjszk@example ",
+    "expect": []
+  },
+  {
+    "name": "email-invalid-6",
+    "text": " xhvald@example ",
+    "expect": []
+  },
+  {
+    "name": "email-invalid-7",
+    "text": " wsrnqb@example ",
+    "expect": []
+  },
+  {
+    "name": "phone-valid-0",
+    "text": " +971507835044 ",
+    "expect": [
+      [
+        "PHONE",
+        "+971507835044"
+      ]
+    ]
+  },
+  {
+    "name": "phone-valid-1",
+    "text": "(+971546197418)",
+    "expect": [
+      [
+        "PHONE",
+        "+971546197418"
+      ]
+    ]
+  },
+  {
+    "name": "phone-valid-2",
+    "text": "+91-6568287121.",
+    "expect": [
+      [
+        "PHONE",
+        "+91-6568287121"
+      ]
+    ]
+  },
+  {
+    "name": "phone-valid-3",
+    "text": "id=+966 55 935 3216;",
+    "expect": [
+      [
+        "PHONE",
+        "+966 55 935 3216"
+      ]
+    ]
+  },
+  {
+    "name": "phone-valid-4",
+    "text": "'+965 5286 4014'",
+    "expect": [
+      [
+        "PHONE",
+        "+965 5286 4014"
+      ]
+    ]
+  },
+  {
+    "name": "phone-valid-5",
+    "text": "076651 56513,",
+    "expect": [
+      [
+        "PHONE",
+        "076651 56513"
+      ]
+    ]
+  },
+  {
+    "name": "phone-valid-6",
+    "text": "\t6870096267\n",
+    "expect": [
+      [
+        "PHONE",
+        "6870096267"
+      ]
+    ]
+  },
+  {
+    "name": "phone-valid-7",
+    "text": "رقم +91 87127 54565 شكرا",
+    "expect": [
+      [
+        "PHONE",
+        "+91 87127 54565"
+      ]
+    ]
+  },
+  {
+    "name": "phone-valid-8",
+    "text": " +966 50 395 6271 ",
+    "expect": [
+      [
+        "PHONE",
+        "+966 50 395 6271"
+      ]
+    ]
+  },
+  {
+    "name": "phone-valid-9",
+    "text": "(084910 00471)",
+    "expect": [
+      [
+        "PHONE",
+        "084910 00471"
+      ]
+    ]
+  },
+  {
+    "name": "phone-valid-10",
+    "text": "050 537 0707.",
+    "expect": [
+      [
+        "PHONE",
+        "050 537 0707"
+      ]
+    ]
+  },
+  {
+    "name": "phone-valid-11",
+    "text": "id=095449 69188;",
+    "expect": [
+      [
+        "PHONE",
+        "095449 69188"
+      ]
+    ]
+  },
+  {
+    "name": "phone-valid-12",
+    "text": "'087309 82130'",
+    "expect": [
+      [
+        "PHONE",
+        "087309 82130"
+      ]
+    ]
+  },
+  {
+    "name": "phone-valid-13",
+    "text": "+965 6659 1451,",
+    "expect": [
+      [
+        "PHONE",
+        "+965 6659 1451"
+      ]
+    ]
+  },
+  {
+    "name": "phone-valid-14",
+    "text": "\t+966 54 407 6035\n",
+    "expect": [
+      [
+        "PHONE",
+        "+966 54 407 6035"
+      ]
+    ]
+  },
+  {
+    "name": "phone-valid-15",
+    "text": "رقم 00974 7643 2655 شكرا",
+    "expect": [
+      [
+        "PHONE",
+        "00974 7643 2655"
+      ]
+    ]
+  },
+  {
+    "name": "phone-valid-16",
+    "text": " +965 6363 6053 ",
+    "expect": [
+      [
+        "PHONE",
+        "+965 6363 6053"
+      ]
+    ]
+  },
+  {
+    "name": "phone-valid-17",
+    "text": "(075402 36112)",
+    "expect": [
+      [
+        "PHONE",
+        "075402 36112"
+      ]
+    ]
+  },
+  {
+    "name": "phone-valid-18",
+    "text": "+966 54 084 3438.",
+    "expect": [
+      [
+        "PHONE",
+        "+966 54 084 3438"
+      ]
+    ]
+  },
+  {
+    "name": "phone-valid-19",
+    "text": "id=099433 54828;",
+    "expect": [
+      [
+        "PHONE",
+        "099433 54828"
+      ]
+    ]
+  },
+  {
+    "name": "phone-valid-20",
+    "text": "'+971524947315'",
+    "expect": [
+      [
+        "PHONE",
+        "+971524947315"
+      ]
+    ]
+  },
+  {
+    "name": "phone-valid-21",
+    "text": "+965 9569 4817,",
+    "expect": [
+      [
+        "PHONE",
+        "+965 9569 4817"
+      ]
+    ]
+  },
+  {
+    "name": "phone-valid-22",
+    "text": "\t056 247 9444\n",
+    "expect": [
+      [
+        "PHONE",
+        "056 247 9444"
+      ]
+    ]
+  },
+  {
+    "name": "phone-valid-23",
+    "text": "رقم 00974 3459 3660 شكرا",
+    "expect": [
+      [
+        "PHONE",
+        "00974 3459 3660"
+      ]
+    ]
+  },
+  {
+    "name": "phone-invalid-0",
+    "text": " +3 7761 ",
+    "expect": []
+  },
+  {
+    "name": "phone-invalid-1",
+    "text": " +8 1991 ",
+    "expect": []
+  },
+  {
+    "name": "phone-invalid-2",
+    "text": " +6 9300 ",
+    "expect": []
+  },
+  {
+    "name": "phone-invalid-3",
+    "text": " +9 7979 ",
+    "expect": []
+  },
+  {
+    "name": "phone-invalid-4",
+    "text": " +3 4510 ",
+    "expect": []
+  },
+  {
+    "name": "phone-invalid-5",
+    "text": " +7 6573 ",
+    "expect": []
+  },
+  {
+    "name": "phone-invalid-6",
+    "text": " +5 3391 ",
+    "expect": []
+  },
+  {
+    "name": "phone-invalid-7",
+    "text": " +3 2009 ",
+    "expect": []
+  },
+  {
+    "name": "iban-valid-0",
+    "text": " PS45 3267 9738 1970 0963 8251 9856 7 ",
+    "expect": [
+      [
+        "IBAN",
+        "PS45 3267 9738 1970 0963 8251 9856 7"
+      ]
+    ]
+  },
+  {
+    "name": "iban-valid-1",
+    "text": "(SI06250333516284799)",
+    "expect": [
+      [
+        "IBAN",
+        "SI06250333516284799"
+      ]
+    ]
+  },
+  {
+    "name": "iban-valid-2",
+    "text": "DK1506900346127428.",
+    "expect": [
+      [
+        "IBAN",
+        "DK1506900346127428"
+      ]
+    ]
+  },
+  {
+    "name": "iban-valid-3",
+    "text": "id=LV8587657331093734208;",
+    "expect": [
+      [
+        "IBAN",
+        "LV8587657331093734208"
+      ]
+    ]
+  },
+  {
+    "name": "iban-valid-4",
+    "text": "'UA693209602720005680965810493'",
+    "expect": [
+      [
+        "IBAN",
+        "UA693209602720005680965810493"
+      ]
+    ]
+  },
+  {
+    "name": "iban-valid-5",
+    "text": "MU3322376755129378603282805162,",
+    "expect": [
+      [
+        "IBAN",
+        "MU3322376755129378603282805162"
+      ]
+    ]
+  },
+  {
+    "name": "iban-valid-6",
+    "text": "\tOM69 6271 6627 6768 1786 397\n",
+    "expect": [
+      [
+        "IBAN",
+        "OM69 6271 6627 6768 1786 397"
+      ]
+    ]
+  },
+  {
+    "name": "iban-valid-7",
+    "text": "رقم BG30151609577212943821 شكرا",
+    "expect": [
+      [
+        "IBAN",
+        "BG30151609577212943821"
+      ]
+    ]
+  },
+  {
+    "name": "iban-valid-8",
+    "text": " IT3222570470576620693372802 ",
+    "expect": [
+      [
+        "IBAN",
+        "IT3222570470576620693372802"
+      ]
+    ]
+  },
+  {
+    "name": "iban-valid-9",
+    "text": "(NO43 8976 0166 519)",
+    "expect": [
+      [
+        "IBAN",
+        "NO43 8976 0166 519"
+      ]
+    ]
+  },
+  {
+    "name": "iban-valid-10",
+    "text": "GR6754409179319212142924607.",
+    "expect": [
+      [
+        "IBAN",
+        "GR6754409179319212142924607"
+      ]
+    ]
+  },
+  {
+    "name": "iban-valid-11",
+    "text": "id=ST91120074338590247760788;",
+    "expect": [
+      [
+        "IBAN",
+        "ST91120074338590247760788"
+      ]
+    ]
+  },
+  {
+    "name": "iban-valid-12",
+    "text": "'CZ1095284806197807171568'",
+    "expect": [
+      [
+        "IBAN",
+        "CZ1095284806197807171568"
+      ]
+    ]
+  },
+  {
+    "name": "iban-valid-13",
+    "text": "SO220543768699753850456,",
+    "expect": [
+      [
+        "IBAN",
+        "SO220543768699753850456"
+      ]
+    ]
+  },
+  {
+    "name": "iban-valid-14",
+    "text": "\tXK394301079744118816\n",
+    "expect": [
+      [
+        "IBAN",
+        "XK394301079744118816"
+      ]
+    ]
+  },
+  {
+    "name": "iban-valid-15",
+    "text": "رقم LT80 5131 9578 0176 3863 شكرا",
+    "expect": [
+      [
+        "IBAN",
+        "LT80 5131 9578 0176 3863"
+      ]
+    ]
+  },
+  {
+    "name": "iban-valid-16",
+    "text": " SC07 9528 1587 2024 4879 1977 2050 595 ",
+    "expect": [
+      [
+        "IBAN",
+        "SC07 9528 1587 2024 4879 1977 2050 595"
+      ]
+    ]
+  },
+  {
+    "name": "iban-valid-17",
+    "text": "(BH55538015852448229646)",
+    "expect": [
+      [
+        "IBAN",
+        "BH55538015852448229646"
+      ]
+    ]
+  },
+  {
+    "name": "iban-valid-18",
+    "text": "NI59 5000 1121 4247 0441 7329 6301.",
+    "expect": [
+      [
+        "IBAN",
+        "NI59 5000 1121 4247 0441 7329 6301"
+      ]
+    ]
+  },
+  {
+    "name": "iban-valid-19",
+    "text": "id=VG93 6120 3606 8260 4998 8291;",
+    "expect": [
+      [
+        "IBAN",
+        "VG93 6120 3606 8260 4998 8291"
+      ]
+    ]
+  },
+  {
+    "name": "iban-valid-20",
+    "text": "'DJ1817011553877312777790965'",
+    "expect": [
+      [
+        "IBAN",
+        "DJ1817011553877312777790965"
+      ]
+    ]
+  },
+  {
+    "name": "iban-valid-21",
+    "text": "GB63 6729 7966 0173 2455 81,",
+    "expect": [
+      [
+        "IBAN",
+        "GB63 6729 7966 0173 2455 81"
+      ]
+    ]
+  },
+  {
+    "name": "iban-valid-22",
+    "text": "\tTL20 1863 4605 4033 0693 921\n",
+    "expect": [
+      [
+        "IBAN",
+        "TL20 1863 4605 4033 0693 921"
+      ]
+    ]
+  },
+  {
+    "name": "iban-valid-23",
+    "text": "رقم SD9586285253504585 شكرا",
+    "expect": [
+      [
+        "IBAN",
+        "SD9586285253504585"
+      ]
+    ]
+  },
+  {
+    "name": "iban-invalid-0",
+    "text": " AT67 7506 9805 6909 9801 ",
+    "expect": []
+  },
+  {
+    "name": "iban-invalid-1",
+    "text": " BY81100578823778327647442061 ",
+    "expect": []
+  },
+  {
+    "name": "iban-invalid-2",
+    "text": " TL147721987915024993703 ",
+    "expect": []
+  },
+  {
+    "name": "iban-invalid-3",
+    "text": " FI3004809539064970 ",
+    "expect": []
+  },
+  {
+    "name": "iban-invalid-4",
+    "text": " AL81 9773 7081 2341 9821 5627 1930 ",
+    "expect": []
+  },
+  {
+    "name": "iban-invalid-5",
+    "text": " GE13 0232 6662 2929 9743 58 ",
+    "expect": []
+  },
+  {
+    "name": "iban-invalid-6",
+    "text": " LV4505621488293530633 ",
+    "expect": []
+  },
+  {
+    "name": "iban-invalid-7",
+    "text": " MN800669268249204153 ",
+    "expect": []
+  },
+  {
+    "name": "card-valid-0",
+    "text": " 2720971473687983 ",
+    "expect": [
+      [
+        "CARD",
+        "2720971473687983"
+      ]
+    ]
+  },
+  {
+    "name": "card-valid-1",
+    "text": "(6250 4126 5042 7165)",
+    "expect": [
+      [
+        "CARD",
+        "6250 4126 5042 7165"
+      ]
+    ]
+  },
+  {
+    "name": "card-valid-2",
+    "text": "6533-8508-9079-8698.",
+    "expect": [
+      [
+        "CARD",
+        "6533-8508-9079-8698"
+      ]
+    ]
+  },
+  {
+    "name": "card-valid-3",
+    "text": "id=2221279329038763;",
+    "expect": [
+      [
+        "CARD",
+        "2221279329038763"
+      ]
+    ]
+  },
+  {
+    "name": "card-valid-4",
+    "text": "'6515-8699-8243-4501'",
+    "expect": [
+      [
+        "CARD",
+        "6515-8699-8243-4501"
+      ]
+    ]
+  },
+  {
+    "name": "card-valid-5",
+    "text": "6011 9495 5981 9984,",
+    "expect": [
+      [
+        "CARD",
+        "6011 9495 5981 9984"
+      ]
+    ]
+  },
+  {
+    "name": "card-valid-6",
+    "text": "\t6011-8939-8271-4943\n",
+    "expect": [
+      [
+        "CARD",
+        "6011-8939-8271-4943"
+      ]
+    ]
+  },
+  {
+    "name": "card-valid-7",
+    "text": "رقم 4439047589820426 شكرا",
+    "expect": [
+      [
+        "CARD",
+        "4439047589820426"
+      ]
+    ]
+  },
+  {
+    "name": "card-valid-8",
+    "text": " 374942662698829 ",
+    "expect": [
+      [
+        "CARD",
+        "374942662698829"
+      ]
+    ]
+  },
+  {
+    "name": "card-valid-9",
+    "text": "(3653 6508 7826 62)",
+    "expect": [
+      [
+        "CARD",
+        "3653 6508 7826 62"
+      ]
+    ]
+  },
+  {
+    "name": "card-valid-10",
+    "text": "5518 3557 7295 8973.",
+    "expect": [
+      [
+        "CARD",
+        "5518 3557 7295 8973"
+      ]
+    ]
+  },
+  {
+    "name": "card-valid-11",
+    "text": "id=2221123119190790;",
+    "expect": [
+      [
+        "CARD",
+        "2221123119190790"
+      ]
+    ]
+  },
+  {
+    "name": "card-valid-12",
+    "text": "'6583-4084-1205-2604'",
+    "expect": [
+      [
+        "CARD",
+        "6583-4084-1205-2604"
+      ]
+    ]
+  },
+  {
+    "name": "card-valid-13",
+    "text": "6011-5650-0563-8354,",
+    "expect": [
+      [
+        "CARD",
+        "6011-5650-0563-8354"
+      ]
+    ]
+  },
+  {
+    "name": "card-valid-14",
+    "text": "\t3530 0979 9268 2053\n",
+    "expect": [
+      [
+        "CARD",
+        "3530 0979 9268 2053"
+      ]
+    ]
+  },
+  {
+    "name": "card-valid-15",
+    "text": "رقم 6011-5733-0347-1056 شكرا",
+    "expect": [
+      [
+        "CARD",
+        "6011-5733-0347-1056"
+      ]
+    ]
+  },
+  {
+    "name": "card-valid-16",
+    "text": " 5157973445751801 ",
+    "expect": [
+      [
+        "CARD",
+        "5157973445751801"
+      ]
+    ]
+  },
+  {
+    "name": "card-valid-17",
+    "text": "(4200 1136 6092 4)",
+    "expect": [
+      [
+        "CARD",
+        "4200 1136 6092 4"
+      ]
+    ]
+  },
+  {
+    "name": "card-valid-18",
+    "text": "2720-2721-6759-3821.",
+    "expect": [
+      [
+        "CARD",
+        "2720-2721-6759-3821"
+      ]
+    ]
+  },
+  {
+    "name": "card-valid-19",
+    "text": "id=3725-584679-59539;",
+    "expect": [
+      [
+        "CARD",
+        "3725-584679-59539"
+      ]
+    ]
+  },
+  {
+    "name": "card-valid-20",
+    "text": "'5081741206182156'",
+    "expect": [
+      [
+        "CARD",
+        "5081741206182156"
+      ]
+    ]
+  },
+  {
+    "name": "card-valid-21",
+    "text": "2221 6312 2054 7658,",
+    "expect": [
+      [
+        "CARD",
+        "2221 6312 2054 7658"
+      ]
+    ]
+  },
+  {
+    "name": "card-valid-22",
+    "text": "\t6526-8451-9269-1426\n",
+    "expect": [
+      [
+        "CARD",
+        "6526-8451-9269-1426"
+      ]
+    ]
+  },
+  {
+    "name": "card-valid-23",
+    "text": "رقم 5559294972532264 شكرا",
+    "expect": [
+      [
+        "CARD",
+        "5559294972532264"
+      ]
+    ]
+  },
+  {
+    "name": "card-invalid-0",
+    "text": " 4333-5378-8363-1 ",
+    "expect": []
+  },
+  {
+    "name": "card-invalid-1",
+    "text": " 2720 6761 9052 8907 ",
+    "expect": []
+  },
+  {
+    "name": "card-invalid-2",
+    "text": " 2720200683111758 ",
+    "expect": []
+  },
+  {
+    "name": "card-invalid-3",
+    "text": " 3633-6308-0556-07 ",
+    "expect": []
+  },
+  {
+    "name": "card-invalid-4",
+    "text": " 3622 2380 6999 77 ",
+    "expect": []
+  },
+  {
+    "name": "card-invalid-5",
+    "text": " 4741-5277-0208-7 ",
+    "expect": []
+  },
+  {
+    "name": "card-invalid-6",
+    "text": " 3686 0116 1101 72 ",
+    "expect": []
+  },
+  {
+    "name": "card-invalid-7",
+    "text": " 2221-1802-5048-1406 ",
+    "expect": []
+  },
+  {
+    "name": "emirates_id-valid-0",
+    "text": " 784197500455247 ",
+    "expect": [
+      [
+        "EMIRATES_ID",
+        "784197500455247"
+      ]
+    ]
+  },
+  {
+    "name": "emirates_id-valid-1",
+    "text": "(784-1978-8822295-3)",
+    "expect": [
+      [
+        "EMIRATES_ID",
+        "784-1978-8822295-3"
+      ]
+    ]
+  },
+  {
+    "name": "emirates_id-valid-2",
+    "text": "784-2000-8464124-8.",
+    "expect": [
+      [
+        "EMIRATES_ID",
+        "784-2000-8464124-8"
+      ]
+    ]
+  },
+  {
+    "name": "emirates_id-valid-3",
+    "text": "id=784198541346338;",
+    "expect": [
+      [
+        "EMIRATES_ID",
+        "784198541346338"
+      ]
+    ]
+  },
+  {
+    "name": "emirates_id-valid-4",
+    "text": "'784 2007 3833237 6'",
+    "expect": [
+      [
+        "EMIRATES_ID",
+        "784 2007 3833237 6"
+      ]
+    ]
+  },
+  {
+    "name": "emirates_id-valid-5",
+    "text": "784-2005-0567478-6,",
+    "expect": [
+      [
+        "EMIRATES_ID",
+        "784-2005-0567478-6"
+      ]
+    ]
+  },
+  {
+    "name": "emirates_id-valid-6",
+    "text": "\t784199641916525\n",
+    "expect": [
+      [
+        "EMIRATES_ID",
+        "784199641916525"
+      ]
+    ]
+  },
+  {
+    "name": "emirates_id-valid-7",
+    "text": "رقم 784-1990-4219773-3 شكرا",
+    "expect": [
+      [
+        "EMIRATES_ID",
+        "784-1990-4219773-3"
+      ]
+    ]
+  },
+  {
+    "name": "emirates_id-valid-8",
+    "text": " 784 2010 5367949 0 ",
+    "expect": [
+      [
+        "EMIRATES_ID",
+        "784 2010 5367949 0"
+      ]
+    ]
+  },
+  {
+    "name": "emirates_id-valid-9",
+    "text": "(784-1988-9518312-1)",
+    "expect": [
+      [
+        "EMIRATES_ID",
+        "784-1988-9518312-1"
+      ]
+    ]
+  },
+  {
+    "name": "emirates_id-valid-10",
+    "text": "784198766738698.",
+    "expect": [
+      [
+        "EMIRATES_ID",
+        "784198766738698"
+      ]
+    ]
+  },
+  {
+    "name": "emirates_id-valid-11",
+    "text": "id=784200867697060;",
+    "expect": [
+      [
+        "EMIRATES_ID",
+        "784200867697060"
+      ]
+    ]
+  },
+  {
+    "name": "emirates_id-valid-12",
+    "text": "'784196377364409'",
+    "expect": [
+      [
+        "EMIRATES_ID",
+        "784196377364409"
+      ]
+    ]
+  },
+  {
+    "name": "emirates_id-valid-13",
+    "text": "784-1994-7346622-7,",
+    "expect": [
+      [
+        "EMIRATES_ID",
+        "784-1994-7346622-7"
+      ]
+    ]
+  },
+  {
+    "name": "emirates_id-valid-14",
+    "text": "\t784 1983 6803472 8\n",
+    "expect": [
+      [
+        "EMIRATES_ID",
+        "784 1983 6803472 8"
+      ]
+    ]
+  },
+  {
+    "name": "emirates_id-valid-15",
+    "text": "رقم 784 1989 5216410 5 شكرا",
+    "expect": [
+      [
+        "EMIRATES_ID",
+        "784 1989 5216410 5"
+      ]
+    ]
+  },
+  {
+    "name": "emirates_id-valid-16",
+    "text": " 784-1969-3161265-7 ",
+    "expect": [
+      [
+        "EMIRATES_ID",
+        "784-1969-3161265-7"
+      ]
+    ]
+  },
+  {
+    "name": "emirates_id-valid-17",
+    "text": "(784-1981-1815073-3)",
+    "expect": [
+      [
+        "EMIRATES_ID",
+        "784-1981-1815073-3"
+      ]
+    ]
+  },
+  {
+    "name": "emirates_id-valid-18",
+    "text": "784 1968 1538687 3.",
+    "expect": [
+      [
+        "EMIRATES_ID",
+        "784 1968 1538687 3"
+      ]
+    ]
+  },
+  {
+    "name": "emirates_id-valid-19",
+    "text": "id=784 1969 8014885 0;",
+    "expect": [
+      [
+        "EMIRATES_ID",
+        "784 1969 8014885 0"
+      ]
+    ]
+  },
+  {
+    "name": "emirates_id-valid-20",
+    "text": "'784196080107830'",
+    "expect": [
+      [
+        "EMIRATES_ID",
+        "784196080107830"
+      ]
+    ]
+  },
+  {
+    "name": "emirates_id-valid-21",
+    "text": "784-1996-8566672-1,",
+    "expect": [
+      [
+        "EMIRATES_ID",
+        "784-1996-8566672-1"
+      ]
+    ]
+  },
+  {
+    "name": "emirates_id-valid-22",
+    "text": "\t784 2003 6277029 7\n",
+    "expect": [
+      [
+        "EMIRATES_ID",
+        "784 2003 6277029 7"
+      ]
+    ]
+  },
+  {
+    "name": "emirates_id-valid-23",
+    "text": "رقم 784-1964-3320005-0 شكرا",
+    "expect": [
+      [
+        "EMIRATES_ID",
+        "784-1964-3320005-0"
+      ]
+    ]
+  },
+  {
+    "name": "emirates_id-invalid-0",
+    "text": " 784-1971-2102573-6 ",
+    "expect": []
+  },
+  {
+    "name": "emirates_id-invalid-1",
+    "text": " 784198244573117 ",
+    "expect": []
+  },
+  {
+    "name": "emirates_id-invalid-2",
+    "text": " 784 1990 6268370 7 ",
+    "expect": []
+  },
+  {
+    "name": "emirates_id-invalid-3",
+    "text": " 784 1996 0497330 2 ",
+    "expect": []
+  },
+  {
+    "name": "emirates_id-invalid-4",
+    "text": " 784200629006838 ",
+    "expect": []
+  },
+  {
+    "name": "emirates_id-invalid-5",
+    "text": " 784 1979 5169643 1 ",
+    "expect": []
+  },
+  {
+    "name": "emirates_id-invalid-6",
+    "text": " 784201014395373 ",
+    "expect": []
+  },
+  {
+    "name": "emirates_id-invalid-7",
+    "text": " 784 1999 6285198 1 ",
+    "expect": []
+  },
+  {
+    "name": "saudi_id-valid-0",
+    "text": " 1906365885 ",
+    "expect": [
+      [
+        "SAUDI_ID",
+        "1906365885"
+      ]
+    ]
+  },
+  {
+    "name": "saudi_id-valid-1",
+    "text": "(2925682383)",
+    "expect": [
+      [
+        "SAUDI_ID",
+        "2925682383"
+      ]
+    ]
+  },
+  {
+    "name": "saudi_id-valid-2",
+    "text": "2238537993.",
+    "expect": [
+      [
+        "SAUDI_ID",
+        "2238537993"
+      ]
+    ]
+  },
+  {
+    "name": "saudi_id-valid-3",
+    "text": "id=1632876874;",
+    "expect": [
+      [
+        "SAUDI_ID",
+        "1632876874"
+      ]
+    ]
+  },
+  {
+    "name": "saudi_id-valid-4",
+    "text": "'2498636196'",
+    "expect": [
+      [
+        "SAUDI_ID",
+        "2498636196"
+      ]
+    ]
+  },
+  {
+    "name": "saudi_id-valid-5",
+    "text": "1059078616,",
+    "expect": [
+      [
+        "SAUDI_ID",
+        "1059078616"
+      ]
+    ]
+  },
+  {
+    "name": "saudi_id-valid-6",
+    "text": "\t1408549697\n",
+    "expect": [
+      [
+        "SAUDI_ID",
+        "1408549697"
+      ]
+    ]
+  },
+  {
+    "name": "saudi_id-valid-7",
+    "text": "رقم 1711429249 شكرا",
+    "expect": [
+      [
+        "SAUDI_ID",
+        "1711429249"
+      ]
+    ]
+  },
+  {
+    "name": "saudi_id-valid-8",
+    "text": " 1594636381 ",
+    "expect": [
+      [
+        "SAUDI_ID",
+        "1594636381"
+      ]
+    ]
+  },
+  {
+    "name": "saudi_id-valid-9",
+    "text": "(1576258766)",
+    "expect": [
+      [
+        "SAUDI_ID",
+        "1576258766"
+      ]
+    ]
+  },
+  {
+    "name": "saudi_id-valid-10",
+    "text": "2538660818.",
+    "expect": [
+      [
+        "SAUDI_ID",
+        "2538660818"
+      ]
+    ]
+  },
+  {
+    "name": "saudi_id-valid-11",
+    "text": "id=1478023987;",
+    "expect": [
+      [
+        "SAUDI_ID",
+        "1478023987"
+      ]
+    ]
+  },
+  {
+    "name": "saudi_id-valid-12",
+    "text": "'1709668220'",
+    "expect": [
+      [
+        "SAUDI_ID",
+        "1709668220"
+      ]
+    ]
+  },
+  {
+    "name": "saudi_id-valid-13",
+    "text": "2869981569,",
+    "expect": [
+      [
+        "SAUDI_ID",
+        "2869981569"
+      ]
+    ]
+  },
+  {
+    "name": "saudi_id-valid-14",
+    "text": "\t2444100081\n",
+    "expect": [
+      [
+        "SAUDI_ID",
+        "2444100081"
+      ]
+    ]
+  },
+  {
+    "name": "saudi_id-valid-15",
+    "text": "رقم 2532269525 شكرا",
+    "expect": [
+      [
+        "SAUDI_ID",
+        "2532269525"
+      ]
+    ]
+  },
+  {
+    "name": "saudi_id-valid-16",
+    "text": " 1277696538 ",
+    "expect": [
+      [
+        "SAUDI_ID",
+        "1277696538"
+      ]
+    ]
+  },
+  {
+    "name": "saudi_id-valid-17",
+    "text": "(1955877772)",
+    "expect": [
+      [
+        "SAUDI_ID",
+        "1955877772"
+      ]
+    ]
+  },
+  {
+    "name": "saudi_id-valid-18",
+    "text": "1677279125.",
+    "expect": [
+      [
+        "SAUDI_ID",
+        "1677279125"
+      ]
+    ]
+  },
+  {
+    "name": "saudi_id-valid-19",
+    "text": "id=2917157741;",
+    "expect": [
+      [
+        "SAUDI_ID",
+        "2917157741"
+      ]
+    ]
+  },
+  {
+    "name": "saudi_id-valid-20",
+    "text": "'1065042267'",
+    "expect": [
+      [
+        "SAUDI_ID",
+        "1065042267"
+      ]
+    ]
+  },
+  {
+    "name": "saudi_id-valid-21",
+    "text": "1852484292,",
+    "expect": [
+      [
+        "SAUDI_ID",
+        "1852484292"
+      ]
+    ]
+  },
+  {
+    "name": "saudi_id-valid-22",
+    "text": "\t1496994599\n",
+    "expect": [
+      [
+        "SAUDI_ID",
+        "1496994599"
+      ]
+    ]
+  },
+  {
+    "name": "saudi_id-valid-23",
+    "text": "رقم 2263760908 شكرا",
+    "expect": [
+      [
+        "SAUDI_ID",
+        "2263760908"
+      ]
+    ]
+  },
+  {
+    "name": "saudi_id-invalid-0",
+    "text": " 2934866921 ",
+    "expect": []
+  },
+  {
+    "name": "saudi_id-invalid-1",
+    "text": " 2603354191 ",
+    "expect": []
+  },
+  {
+    "name": "saudi_id-invalid-2",
+    "text": " 1606192326 ",
+    "expect": []
+  },
+  {
+    "name": "saudi_id-invalid-3",
+    "text": " 2197189302 ",
+    "expect": []
+  },
+  {
+    "name": "saudi_id-invalid-4",
+    "text": " 2985209654 ",
+    "expect": []
+  },
+  {
+    "name": "saudi_id-invalid-5",
+    "text": " 1709197497 ",
+    "expect": []
+  },
+  {
+    "name": "saudi_id-invalid-6",
+    "text": " 2099133736 ",
+    "expect": []
+  },
+  {
+    "name": "saudi_id-invalid-7",
+    "text": " 2167154163 ",
+    "expect": []
+  },
+  {
+    "name": "aadhaar-valid-0",
+    "text": " 7190-2462-7456 ",
+    "expect": [
+      [
+        "AADHAAR",
+        "7190-2462-7456"
+      ]
+    ]
+  },
+  {
+    "name": "aadhaar-valid-1",
+    "text": "(598239315184)",
+    "expect": [
+      [
+        "AADHAAR",
+        "598239315184"
+      ]
+    ]
+  },
+  {
+    "name": "aadhaar-valid-2",
+    "text": "7106-2206-6072.",
+    "expect": [
+      [
+        "AADHAAR",
+        "7106-2206-6072"
+      ]
+    ]
+  },
+  {
+    "name": "aadhaar-valid-3",
+    "text": "id=755574239810;",
+    "expect": [
+      [
+        "AADHAAR",
+        "755574239810"
+      ]
+    ]
+  },
+  {
+    "name": "aadhaar-valid-4",
+    "text": "'4727 4156 2552'",
+    "expect": [
+      [
+        "AADHAAR",
+        "4727 4156 2552"
+      ]
+    ]
+  },
+  {
+    "name": "aadhaar-valid-5",
+    "text": "2048 5473 1188,",
+    "expect": [
+      [
+        "AADHAAR",
+        "2048 5473 1188"
+      ]
+    ]
+  },
+  {
+    "name": "aadhaar-valid-6",
+    "text": "\t8228-0125-1679\n",
+    "expect": [
+      [
+        "AADHAAR",
+        "8228-0125-1679"
+      ]
+    ]
+  },
+  {
+    "name": "aadhaar-valid-7",
+    "text": "رقم 9454-2062-3212 شكرا",
+    "expect": [
+      [
+        "AADHAAR",
+        "9454-2062-3212"
+      ]
+    ]
+  },
+  {
+    "name": "aadhaar-valid-8",
+    "text": " 762740559307 ",
+    "expect": [
+      [
+        "AADHAAR",
+        "762740559307"
+      ]
+    ]
+  },
+  {
+    "name": "aadhaar-valid-9",
+    "text": "(426573353487)",
+    "expect": [
+      [
+        "AADHAAR",
+        "426573353487"
+      ]
+    ]
+  },
+  {
+    "name": "aadhaar-valid-10",
+    "text": "2676-9261-3933.",
+    "expect": [
+      [
+        "AADHAAR",
+        "2676-9261-3933"
+      ]
+    ]
+  },
+  {
+    "name": "aadhaar-valid-11",
+    "text": "id=832397316765;",
+    "expect": [
+      [
+        "AADHAAR",
+        "832397316765"
+      ]
+    ]
+  },
+  {
+    "name": "aadhaar-valid-12",
+    "text": "'213965253137'",
+    "expect": [
+      [
+        "AADHAAR",
+        "213965253137"
+      ]
+    ]
+  },
+  {
+    "name": "aadhaar-valid-13",
+    "text": "4833-3287-8148,",
+    "expect": [
+      [
+        "AADHAAR",
+        "4833-3287-8148"
+      ]
+    ]
+  },
+  {
+    "name": "aadhaar-valid-14",
+    "text": "\t416323184575\n",
+    "expect": [
+      [
+        "AADHAAR",
+        "416323184575"
+      ]
+    ]
+  },
+  {
+    "name": "aadhaar-valid-15",
+    "text": "رقم 6572-7124-1225 شكرا",
+    "expect": [
+      [
+        "AADHAAR",
+        "6572-7124-1225"
+      ]
+    ]
+  },
+  {
+    "name": "aadhaar-valid-16",
+    "text": " 230781655416 ",
+    "expect": [
+      [
+        "AADHAAR",
+        "230781655416"
+      ]
+    ]
+  },
+  {
+    "name": "aadhaar-valid-17",
+    "text": "(2945-4043-8214)",
+    "expect": [
+      [
+        "AADHAAR",
+        "2945-4043-8214"
+      ]
+    ]
+  },
+  {
+    "name": "aadhaar-valid-18",
+    "text": "635226900728.",
+    "expect": [
+      [
+        "AADHAAR",
+        "635226900728"
+      ]
+    ]
+  },
+  {
+    "name": "aadhaar-valid-19",
+    "text": "id=3349 8618 1841;",
+    "expect": [
+      [
+        "AADHAAR",
+        "3349 8618 1841"
+      ]
+    ]
+  },
+  {
+    "name": "aadhaar-valid-20",
+    "text": "'588493361382'",
+    "expect": [
+      [
+        "AADHAAR",
+        "588493361382"
+      ]
+    ]
+  },
+  {
+    "name": "aadhaar-valid-21",
+    "text": "3859-4531-1153,",
+    "expect": [
+      [
+        "AADHAAR",
+        "3859-4531-1153"
+      ]
+    ]
+  },
+  {
+    "name": "aadhaar-valid-22",
+    "text": "\t7444 3991 2357\n",
+    "expect": [
+      [
+        "AADHAAR",
+        "7444 3991 2357"
+      ]
+    ]
+  },
+  {
+    "name": "aadhaar-valid-23",
+    "text": "رقم 4256-4943-4734 شكرا",
+    "expect": [
+      [
+        "AADHAAR",
+        "4256-4943-4734"
+      ]
+    ]
+  },
+  {
+    "name": "aadhaar-invalid-0",
+    "text": " 9289-1399-0038 ",
+    "expect": []
+  },
+  {
+    "name": "aadhaar-invalid-1",
+    "text": " 4556-3400-4636 ",
+    "expect": []
+  },
+  {
+    "name": "aadhaar-invalid-2",
+    "text": " 6545-4303-2484 ",
+    "expect": []
+  },
+  {
+    "name": "aadhaar-invalid-3",
+    "text": " 5791 3098 4779 ",
+    "expect": []
+  },
+  {
+    "name": "aadhaar-invalid-4",
+    "text": " 6418 2936 7858 ",
+    "expect": []
+  },
+  {
+    "name": "aadhaar-invalid-5",
+    "text": " 3598 8231 7109 ",
+    "expect": []
+  },
+  {
+    "name": "aadhaar-invalid-6",
+    "text": " 937712517316 ",
+    "expect": []
+  },
+  {
+    "name": "aadhaar-invalid-7",
+    "text": " 873067834961 ",
+    "expect": []
+  },
+  {
+    "name": "in_pan-valid-0",
+    "text": " VBCHJ3550R ",
+    "expect": [
+      [
+        "IN_PAN",
+        "VBCHJ3550R"
+      ]
+    ]
+  },
+  {
+    "name": "in_pan-valid-1",
+    "text": "(XEVLR6413E)",
+    "expect": [
+      [
+        "IN_PAN",
+        "XEVLR6413E"
+      ]
+    ]
+  },
+  {
+    "name": "in_pan-valid-2",
+    "text": "TXNFU1608Q.",
+    "expect": [
+      [
+        "IN_PAN",
+        "TXNFU1608Q"
+      ]
+    ]
+  },
+  {
+    "name": "in_pan-valid-3",
+    "text": "id=WEGGS1078Y;",
+    "expect": [
+      [
+        "IN_PAN",
+        "WEGGS1078Y"
+      ]
+    ]
+  },
+  {
+    "name": "in_pan-valid-4",
+    "text": "'LCRBV6044F'",
+    "expect": [
+      [
+        "IN_PAN",
+        "LCRBV6044F"
+      ]
+    ]
+  },
+  {
+    "name": "in_pan-valid-5",
+    "text": "VIIBM7336S,",
+    "expect": [
+      [
+        "IN_PAN",
+        "VIIBM7336S"
+      ]
+    ]
+  },
+  {
+    "name": "in_pan-valid-6",
+    "text": "\tQVXBW2987D\n",
+    "expect": [
+      [
+        "IN_PAN",
+        "QVXBW2987D"
+      ]
+    ]
+  },
+  {
+    "name": "in_pan-valid-7",
+    "text": "رقم ZYQBW5845V شكرا",
+    "expect": [
+      [
+        "IN_PAN",
+        "ZYQBW5845V"
+      ]
+    ]
+  },
+  {
+    "name": "in_pan-valid-8",
+    "text": " SYVHR9542Q ",
+    "expect": [
+      [
+        "IN_PAN",
+        "SYVHR9542Q"
+      ]
+    ]
+  },
+  {
+    "name": "in_pan-valid-9",
+    "text": "(ROEFI5978M)",
+    "expect": [
+      [
+        "IN_PAN",
+        "ROEFI5978M"
+      ]
+    ]
+  },
+  {
+    "name": "in_pan-valid-10",
+    "text": "KDNAG7746J.",
+    "expect": [
+      [
+        "IN_PAN",
+        "KDNAG7746J"
+      ]
+    ]
+  },
+  {
+    "name": "in_pan-valid-11",
+    "text": "id=DYILL6937G;",
+    "expect": [
+      [
+        "IN_PAN",
+        "DYILL6937G"
+      ]
+    ]
+  },
+  {
+    "name": "in_pan-valid-12",
+    "text": "'EXGAN4335A'",
+    "expect": [
+      [
+        "IN_PAN",
+        "EXGAN4335A"
+      ]
+    ]
+  },
+  {
+    "name": "in_pan-valid-13",
+    "text": "IAAJU6084Z,",
+    "expect": [
+      [
+        "IN_PAN",
+        "IAAJU6084Z"
+      ]
+    ]
+  },
+  {
+    "name": "in_pan-valid-14",
+    "text": "\tOJGHY3541M\n",
+    "expect": [
+      [
+        "IN_PAN",
+        "OJGHY3541M"
+      ]
+    ]
+  },
+  {
+    "name": "in_pan-valid-15",
+    "text": "رقم PRJBQ8681U شكرا",
+    "expect": [
+      [
+        "IN_PAN",
+        "PRJBQ8681U"
+      ]
+    ]
+  },
+  {
+    "name": "in_pan-valid-16",
+    "text": " IZPTV4719A ",
+    "expect": [
+      [
+        "IN_PAN",
+        "IZPTV4719A"
+      ]
+    ]
+  },
+  {
+    "name": "in_pan-valid-17",
+    "text": "(FUDTP5764E)",
+    "expect": [
+      [
+        "IN_PAN",
+        "FUDTP5764E"
+      ]
+    ]
+  },
+  {
+    "name": "in_pan-valid-18",
+    "text": "ELJJE5486C.",
+    "expect": [
+      [
+        "IN_PAN",
+        "ELJJE5486C"
+      ]
+    ]
+  },
+  {
+    "name": "in_pan-valid-19",
+    "text": "id=FMNAI6190G;",
+    "expect": [
+      [
+        "IN_PAN",
+        "FMNAI6190G"
+      ]
+    ]
+  },
+  {
+    "name": "in_pan-valid-20",
+    "text": "'FNJCC6728G'",
+    "expect": [
+      [
+        "IN_PAN",
+        "FNJCC6728G"
+      ]
+    ]
+  },
+  {
+    "name": "in_pan-valid-21",
+    "text": "BUXCQ9878G,",
+    "expect": [
+      [
+        "IN_PAN",
+        "BUXCQ9878G"
+      ]
+    ]
+  },
+  {
+    "name": "in_pan-valid-22",
+    "text": "\tBTYHJ0020V\n",
+    "expect": [
+      [
+        "IN_PAN",
+        "BTYHJ0020V"
+      ]
+    ]
+  },
+  {
+    "name": "in_pan-valid-23",
+    "text": "رقم TJWTC3129P شكرا",
+    "expect": [
+      [
+        "IN_PAN",
+        "TJWTC3129P"
+      ]
+    ]
+  },
+  {
+    "name": "in_pan-invalid-0",
+    "text": " QGQMI4131O ",
+    "expect": []
+  },
+  {
+    "name": "in_pan-invalid-1",
+    "text": " XDQKA7677H ",
+    "expect": []
+  },
+  {
+    "name": "in_pan-invalid-2",
+    "text": " EBHKE0629K ",
+    "expect": []
+  },
+  {
+    "name": "in_pan-invalid-3",
+    "text": " UZEYH4012S ",
+    "expect": []
+  },
+  {
+    "name": "in_pan-invalid-4",
+    "text": " RRWKO6334Y ",
+    "expect": []
+  },
+  {
+    "name": "in_pan-invalid-5",
+    "text": " TMSIT6917X ",
+    "expect": []
+  },
+  {
+    "name": "in_pan-invalid-6",
+    "text": " CDGOH9924G ",
+    "expect": []
+  },
+  {
+    "name": "in_pan-invalid-7",
+    "text": " PZONC4452B ",
+    "expect": []
+  },
+  {
+    "name": "ip_address-valid-0",
+    "text": " d4f:c2b:f8d2:f2a8:13d2:9ef:250a:685c ",
+    "expect": [
+      [
+        "IP_ADDRESS",
+        "d4f:c2b:f8d2:f2a8:13d2:9ef:250a:685c"
+      ]
+    ]
+  },
+  {
+    "name": "ip_address-valid-1",
+    "text": "(fa7b:77f:9840:fa55:b0b8:aeb7:3a9f:5861)",
+    "expect": [
+      [
+        "IP_ADDRESS",
+        "fa7b:77f:9840:fa55:b0b8:aeb7:3a9f:5861"
+      ]
+    ]
+  },
+  {
+    "name": "ip_address-valid-2",
+    "text": "b6d8:4166:f57e:50b7:7f90:f4db:930b:2d0.",
+    "expect": [
+      [
+        "IP_ADDRESS",
+        "b6d8:4166:f57e:50b7:7f90:f4db:930b:2d0"
+      ]
+    ]
+  },
+  {
+    "name": "ip_address-valid-3",
+    "text": "id=501b:72f0:b20a:483f:ed3e:10ab:79a:be96;",
+    "expect": [
+      [
+        "IP_ADDRESS",
+        "501b:72f0:b20a:483f:ed3e:10ab:79a:be96"
+      ]
+    ]
+  },
+  {
+    "name": "ip_address-valid-4",
+    "text": "'6f02:b032:65f8:e407:1870:8dfe:abb0:9f42'",
+    "expect": [
+      [
+        "IP_ADDRESS",
+        "6f02:b032:65f8:e407:1870:8dfe:abb0:9f42"
+      ]
+    ]
+  },
+  {
+    "name": "ip_address-valid-5",
+    "text": "138.113.47.76,",
+    "expect": [
+      [
+        "IP_ADDRESS",
+        "138.113.47.76"
+      ]
+    ]
+  },
+  {
+    "name": "ip_address-valid-6",
+    "text": "\t106.236.17.84\n",
+    "expect": [
+      [
+        "IP_ADDRESS",
+        "106.236.17.84"
+      ]
+    ]
+  },
+  {
+    "name": "ip_address-valid-7",
+    "text": "رقم bf75:d8ab:9a4a:d7f:14c3:8d0f:d1ba:4a8d شكرا",
+    "expect": [
+      [
+        "IP_ADDRESS",
+        "bf75:d8ab:9a4a:d7f:14c3:8d0f:d1ba:4a8d"
+      ]
+    ]
+  },
+  {
+    "name": "ip_address-valid-8",
+    "text": " 6738:f71b:4248:e219:7019:31e2:a541:9434 ",
+    "expect": [
+      [
+        "IP_ADDRESS",
+        "6738:f71b:4248:e219:7019:31e2:a541:9434"
+      ]
+    ]
+  },
+  {
+    "name": "ip_address-valid-9",
+    "text": "(190.197.217.29)",
+    "expect": [
+      [
+        "IP_ADDRESS",
+        "190.197.217.29"
+      ]
+    ]
+  },
+  {
+    "name": "ip_address-valid-10",
+    "text": "158.28.50.79.",
+    "expect": [
+      [
+        "IP_ADDRESS",
+        "158.28.50.79"
+      ]
+    ]
+  },
+  {
+    "name": "ip_address-valid-11",
+    "text": "id=e6c9:8856:b3bb:e81e:d748:c08b:a452:ed78;",
+    "expect": [
+      [
+        "IP_ADDRESS",
+        "e6c9:8856:b3bb:e81e:d748:c08b:a452:ed78"
+      ]
+    ]
+  },
+  {
+    "name": "ip_address-valid-12",
+    "text": "'205.229.182.36'",
+    "expect": [
+      [
+        "IP_ADDRESS",
+        "205.229.182.36"
+      ]
+    ]
+  },
+  {
+    "name": "ip_address-valid-13",
+    "text": "a1:6105:a78f:a451:260e:4e3:3a4b:7a33,",
+    "expect": [
+      [
+        "IP_ADDRESS",
+        "a1:6105:a78f:a451:260e:4e3:3a4b:7a33"
+      ]
+    ]
+  },
+  {
+    "name": "ip_address-valid-14",
+    "text": "\td63d:43f3:a0ed:f382:8244:c7f6:87e1:eacb\n",
+    "expect": [
+      [
+        "IP_ADDRESS",
+        "d63d:43f3:a0ed:f382:8244:c7f6:87e1:eacb"
+      ]
+    ]
+  },
+  {
+    "name": "ip_address-valid-15",
+    "text": "رقم 200.59.174.229 شكرا",
+    "expect": [
+      [
+        "IP_ADDRESS",
+        "200.59.174.229"
+      ]
+    ]
+  },
+  {
+    "name": "ip_address-valid-16",
+    "text": " 66.193.32.6 ",
+    "expect": [
+      [
+        "IP_ADDRESS",
+        "66.193.32.6"
+      ]
+    ]
+  },
+  {
+    "name": "ip_address-valid-17",
+    "text": "(82a4:d1f:cdc4:83c1:1382:43d8:46b0:c541)",
+    "expect": [
+      [
+        "IP_ADDRESS",
+        "82a4:d1f:cdc4:83c1:1382:43d8:46b0:c541"
+      ]
+    ]
+  },
+  {
+    "name": "ip_address-valid-18",
+    "text": "249.93.247.208.",
+    "expect": [
+      [
+        "IP_ADDRESS",
+        "249.93.247.208"
+      ]
+    ]
+  },
+  {
+    "name": "ip_address-valid-19",
+    "text": "id=19.226.122.32;",
+    "expect": [
+      [
+        "IP_ADDRESS",
+        "19.226.122.32"
+      ]
+    ]
+  },
+  {
+    "name": "ip_address-valid-20",
+    "text": "'124.109.214.100'",
+    "expect": [
+      [
+        "IP_ADDRESS",
+        "124.109.214.100"
+      ]
+    ]
+  },
+  {
+    "name": "ip_address-valid-21",
+    "text": "240.246.106.126,",
+    "expect": [
+      [
+        "IP_ADDRESS",
+        "240.246.106.126"
+      ]
+    ]
+  },
+  {
+    "name": "ip_address-valid-22",
+    "text": "\t175.163.150.208\n",
+    "expect": [
+      [
+        "IP_ADDRESS",
+        "175.163.150.208"
+      ]
+    ]
+  },
+  {
+    "name": "ip_address-valid-23",
+    "text": "رقم 63ad:214:32b6:ecbb:f9b4:f405:784f:d573 شكرا",
+    "expect": [
+      [
+        "IP_ADDRESS",
+        "63ad:214:32b6:ecbb:f9b4:f405:784f:d573"
+      ]
+    ]
+  },
+  {
+    "name": "ip_address-invalid-0",
+    "text": " 687.27.197.205 ",
+    "expect": []
+  },
+  {
+    "name": "ip_address-invalid-1",
+    "text": " 422.5.169.162 ",
+    "expect": []
+  },
+  {
+    "name": "ip_address-invalid-2",
+    "text": " 627.238.121.104 ",
+    "expect": []
+  },
+  {
+    "name": "ip_address-invalid-3",
+    "text": " 693.184.12.58 ",
+    "expect": []
+  },
+  {
+    "name": "ip_address-invalid-4",
+    "text": " 997.76.147.253 ",
+    "expect": []
+  },
+  {
+    "name": "ip_address-invalid-5",
+    "text": " 283.222.234.26 ",
+    "expect": []
+  },
+  {
+    "name": "ip_address-invalid-6",
+    "text": " 696.175.245.29 ",
+    "expect": []
+  },
+  {
+    "name": "ip_address-invalid-7",
+    "text": " 459.212.238.3 ",
+    "expect": []
+  },
+  {
+    "name": "secret-valid-0",
+    "text": " ghp_EXAMPLEfgi5Myx033XHnXUbOOwXJOKwTWdvd ",
+    "expect": [
+      [
+        "SECRET",
+        "ghp_EXAMPLEfgi5Myx033XHnXUbOOwXJOKwTWdvd"
+      ]
+    ]
+  },
+  {
+    "name": "secret-valid-1",
+    "text": "(AKIAY5QYQ646FEXAMPLE)",
+    "expect": [
+      [
+        "SECRET",
+        "AKIAY5QYQ646FEXAMPLE"
+      ]
+    ]
+  },
+  {
+    "name": "secret-valid-2",
+    "text": "eyJhbGciOiAiUlMyNTYiLCAidHlwIjogIkpXVCJ9.eyJzdWIiOiAidXNlci05NzQwMyJ9.rAsCJsUD_mij74vbYpgJIN73DaTx1lIl.",
+    "expect": [
+      [
+        "SECRET",
+        "eyJhbGciOiAiUlMyNTYiLCAidHlwIjogIkpXVCJ9.eyJzdWIiOiAidXNlci05NzQwMyJ9.rAsCJsUD_mij74vbYpgJIN73DaTx1lIl"
+      ]
+    ]
+  },
+  {
+    "name": "secret-valid-3",
+    "text": "id=AKIAFKLR9JZCEEXAMPLE;",
+    "expect": [
+      [
+        "SECRET",
+        "AKIAFKLR9JZCEEXAMPLE"
+      ]
+    ]
+  },
+  {
+    "name": "secret-valid-4",
+    "text": "'eyJhbGciOiAiRVMyNTYiLCAidHlwIjogIkpXVCJ9.eyJzdWIiOiAidXNlci02Mzc0MyJ9.wlumLzJXAUOj-qN1PiK5T14_zeLww4DN'",
+    "expect": [
+      [
+        "SECRET",
+        "eyJhbGciOiAiRVMyNTYiLCAidHlwIjogIkpXVCJ9.eyJzdWIiOiAidXNlci02Mzc0MyJ9.wlumLzJXAUOj-qN1PiK5T14_zeLww4DN"
+      ]
+    ]
+  },
+  {
+    "name": "secret-valid-5",
+    "text": "ghp_EXAMPLEpf01wxw0lLH1QdS1KBWTF1S6ummHh,",
+    "expect": [
+      [
+        "SECRET",
+        "ghp_EXAMPLEpf01wxw0lLH1QdS1KBWTF1S6ummHh"
+      ]
+    ]
+  },
+  {
+    "name": "secret-valid-6",
+    "text": "\teyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJzdWIiOiAidXNlci02MDI5OSJ9.mE6k-rSpyP96fqEuX2kgjBGhpCM01o-6\n",
+    "expect": [
+      [
+        "SECRET",
+        "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJzdWIiOiAidXNlci02MDI5OSJ9.mE6k-rSpyP96fqEuX2kgjBGhpCM01o-6"
+      ]
+    ]
+  },
+  {
+    "name": "secret-valid-7",
+    "text": "رقم ghp_EXAMPLEMkTDB7cvTf7Je4UbiwsyDeX9ApDHX شكرا",
+    "expect": [
+      [
+        "SECRET",
+        "ghp_EXAMPLEMkTDB7cvTf7Je4UbiwsyDeX9ApDHX"
+      ]
+    ]
+  },
+  {
+    "name": "secret-valid-8",
+    "text": " AKIAXI4PF78FOEXAMPLE ",
+    "expect": [
+      [
+        "SECRET",
+        "AKIAXI4PF78FOEXAMPLE"
+      ]
+    ]
+  },
+  {
+    "name": "secret-valid-9",
+    "text": "(ghp_EXAMPLEIDy9t9SR9RRUM7InGe2vzjsXa7QNi)",
+    "expect": [
+      [
+        "SECRET",
+        "ghp_EXAMPLEIDy9t9SR9RRUM7InGe2vzjsXa7QNi"
+      ]
+    ]
+  },
+  {
+    "name": "secret-valid-10",
+    "text": "AKIA5BOT07Q1PEXAMPLE.",
+    "expect": [
+      [
+        "SECRET",
+        "AKIA5BOT07Q1PEXAMPLE"
+      ]
+    ]
+  },
+  {
+    "name": "secret-valid-11",
+    "text": "id=AKIAXF1URTO8QEXAMPLE;",
+    "expect": [
+      [
+        "SECRET",
+        "AKIAXF1URTO8QEXAMPLE"
+      ]
+    ]
+  },
+  {
+    "name": "secret-valid-12",
+    "text": "'eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJzdWIiOiAidXNlci0zMTQ0MyJ9.7mEJdHVbCehFkE98xKeljnjuASyOI6qh'",
+    "expect": [
+      [
+        "SECRET",
+        "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJzdWIiOiAidXNlci0zMTQ0MyJ9.7mEJdHVbCehFkE98xKeljnjuASyOI6qh"
+      ]
+    ]
+  },
+  {
+    "name": "secret-valid-13",
+    "text": "ghp_EXAMPLERBOB3tl0ArTTdEjbn8GweyJgrtbFn,",
+    "expect": [
+      [
+        "SECRET",
+        "ghp_EXAMPLERBOB3tl0ArTTdEjbn8GweyJgrtbFn"
+      ]
+    ]
+  },
+  {
+    "name": "secret-valid-14",
+    "text": "\tAKIACAJU7UMJVEXAMPLE\n",
+    "expect": [
+      [
+        "SECRET",
+        "AKIACAJU7UMJVEXAMPLE"
+      ]
+    ]
+  },
+  {
+    "name": "secret-valid-15",
+    "text": "رقم ghp_EXAMPLEvB6iAdv5qI843RxufPmFx8yLp4nnf شكرا",
+    "expect": [
+      [
+        "SECRET",
+        "ghp_EXAMPLEvB6iAdv5qI843RxufPmFx8yLp4nnf"
+      ]
+    ]
+  },
+  {
+    "name": "secret-valid-16",
+    "text": " ghp_EXAMPLE6LMhIZYoSVT5yhnfI59YnOGpdoIyU ",
+    "expect": [
+      [
+        "SECRET",
+        "ghp_EXAMPLE6LMhIZYoSVT5yhnfI59YnOGpdoIyU"
+      ]
+    ]
+  },
+  {
+    "name": "secret-valid-17",
+    "text": "(eyJhbGciOiAiUlMyNTYiLCAidHlwIjogIkpXVCJ9.eyJzdWIiOiAidXNlci0xNTQyNSJ9.0oYMo1s2cM4flRxn_9jl7yA7Fxd_w5EU)",
+    "expect": [
+      [
+        "SECRET",
+        "eyJhbGciOiAiUlMyNTYiLCAidHlwIjogIkpXVCJ9.eyJzdWIiOiAidXNlci0xNTQyNSJ9.0oYMo1s2cM4flRxn_9jl7yA7Fxd_w5EU"
+      ]
+    ]
+  },
+  {
+    "name": "secret-valid-18",
+    "text": "ghp_EXAMPLErkm0GvTGRu9UxLWc9vEjJfw323rrs.",
+    "expect": [
+      [
+        "SECRET",
+        "ghp_EXAMPLErkm0GvTGRu9UxLWc9vEjJfw323rrs"
+      ]
+    ]
+  },
+  {
+    "name": "secret-valid-19",
+    "text": "id=ghp_EXAMPLEHy7xXokxRXrN3WBKKJ5lnTdmnQRHj;",
+    "expect": [
+      [
+        "SECRET",
+        "ghp_EXAMPLEHy7xXokxRXrN3WBKKJ5lnTdmnQRHj"
+      ]
+    ]
+  },
+  {
+    "name": "secret-valid-20",
+    "text": "'eyJhbGciOiAiRVMyNTYiLCAidHlwIjogIkpXVCJ9.eyJzdWIiOiAidXNlci01OTcyMiJ9.geAbayBAmlYrIPSAjlUu6jyaF3ERTDsc'",
+    "expect": [
+      [
+        "SECRET",
+        "eyJhbGciOiAiRVMyNTYiLCAidHlwIjogIkpXVCJ9.eyJzdWIiOiAidXNlci01OTcyMiJ9.geAbayBAmlYrIPSAjlUu6jyaF3ERTDsc"
+      ]
+    ]
+  },
+  {
+    "name": "secret-valid-21",
+    "text": "AKIAASVQHNJRXEXAMPLE,",
+    "expect": [
+      [
+        "SECRET",
+        "AKIAASVQHNJRXEXAMPLE"
+      ]
+    ]
+  },
+  {
+    "name": "secret-valid-22",
+    "text": "\teyJhbGciOiAiRVMyNTYiLCAidHlwIjogIkpXVCJ9.eyJzdWIiOiAidXNlci05NTc4MCJ9.L62t2cfTwiEvokpG3XvKKoif-GSY3uAW\n",
+    "expect": [
+      [
+        "SECRET",
+        "eyJhbGciOiAiRVMyNTYiLCAidHlwIjogIkpXVCJ9.eyJzdWIiOiAidXNlci05NTc4MCJ9.L62t2cfTwiEvokpG3XvKKoif-GSY3uAW"
+      ]
+    ]
+  },
+  {
+    "name": "secret-valid-23",
+    "text": "رقم ghp_EXAMPLEegSMfux54dWQl2JlA1r8F18nInLIK شكرا",
+    "expect": [
+      [
+        "SECRET",
+        "ghp_EXAMPLEegSMfux54dWQl2JlA1r8F18nInLIK"
+      ]
+    ]
+  },
+  {
+    "name": "secret-invalid-0",
+    "text": " AKIAHWAHWLEH ",
+    "expect": []
+  },
+  {
+    "name": "secret-invalid-1",
+    "text": " AKIATGFJOQLG ",
+    "expect": []
+  },
+  {
+    "name": "secret-invalid-2",
+    "text": " AKIAWHMDKEOW ",
+    "expect": []
+  },
+  {
+    "name": "secret-invalid-3",
+    "text": " AKIAUWSFRVOS ",
+    "expect": []
+  },
+  {
+    "name": "secret-invalid-4",
+    "text": " AKIARBXMWAGO ",
+    "expect": []
+  },
+  {
+    "name": "secret-invalid-5",
+    "text": " AKIAKGLDNVNH ",
+    "expect": []
+  },
+  {
+    "name": "secret-invalid-6",
+    "text": " AKIASJNWXAVK ",
+    "expect": []
+  },
+  {
+    "name": "secret-invalid-7",
+    "text": " AKIAMALHIUCL ",
+    "expect": []
+  },
+  {
+    "name": "mixed-0",
+    "text": "Note: 0503778515; then 9591 0675 6664; then SHCGO8407T. End.",
+    "expect": [
+      [
+        "PHONE",
+        "0503778515"
+      ],
+      [
+        "AADHAAR",
+        "9591 0675 6664"
+      ],
+      [
+        "IN_PAN",
+        "SHCGO8407T"
+      ]
+    ]
+  },
+  {
+    "name": "mixed-1",
+    "text": "Note: 3763-029961-64766; then 3243 5604 3436; then 784-1998-9605747-0; then VA73809967926105581877. End.",
+    "expect": [
+      [
+        "CARD",
+        "3763-029961-64766"
+      ],
+      [
+        "AADHAAR",
+        "3243 5604 3436"
+      ],
+      [
+        "EMIRATES_ID",
+        "784-1998-9605747-0"
+      ],
+      [
+        "IBAN",
+        "VA73809967926105581877"
+      ]
+    ]
+  },
+  {
+    "name": "mixed-2",
+    "text": "Note: HN72 5727 2544 0342 1880 9408 6156; then 56b5:b36c:fb61:2e70:7f:8a11:c59b:3f50; then 065344 72997; then 4396 3545 6002. End.",
+    "expect": [
+      [
+        "IBAN",
+        "HN72 5727 2544 0342 1880 9408 6156"
+      ],
+      [
+        "IP_ADDRESS",
+        "56b5:b36c:fb61:2e70:7f:8a11:c59b:3f50"
+      ],
+      [
+        "PHONE",
+        "065344 72997"
+      ],
+      [
+        "AADHAAR",
+        "4396 3545 6002"
+      ]
+    ]
+  },
+  {
+    "name": "mixed-3",
+    "text": "Note: HAUJM3156F; then 4275 5013 5266 8146; then 2273 5306 0743; then BH44163380655681010820. End.",
+    "expect": [
+      [
+        "IN_PAN",
+        "HAUJM3156F"
+      ],
+      [
+        "CARD",
+        "4275 5013 5266 8146"
+      ],
+      [
+        "AADHAAR",
+        "2273 5306 0743"
+      ],
+      [
+        "IBAN",
+        "BH44163380655681010820"
+      ]
+    ]
+  },
+  {
+    "name": "mixed-4",
+    "text": "Note: bmaxnix.jaq@example.com; then 7348 5012 3356; then ghp_EXAMPLEfh3A5QcTnYo7CmrbphEyowepVVbW5. End.",
+    "expect": [
+      [
+        "EMAIL",
+        "bmaxnix.jaq@example.com"
+      ],
+      [
+        "AADHAAR",
+        "7348 5012 3356"
+      ],
+      [
+        "SECRET",
+        "ghp_EXAMPLEfh3A5QcTnYo7CmrbphEyowepVVbW5"
+      ]
+    ]
+  },
+  {
+    "name": "mixed-5",
+    "text": "Note: 3325 0699 3095; then 2011500119; then SC10 2782 9065 3657 6578 9138 8706 796; then 2733 3075 3741; then 0506770289. End.",
+    "expect": [
+      [
+        "AADHAAR",
+        "3325 0699 3095"
+      ],
+      [
+        "SAUDI_ID",
+        "2011500119"
+      ],
+      [
+        "IBAN",
+        "SC10 2782 9065 3657 6578 9138 8706 796"
+      ],
+      [
+        "AADHAAR",
+        "2733 3075 3741"
+      ],
+      [
+        "PHONE",
+        "0506770289"
+      ]
+    ]
+  },
+  {
+    "name": "mixed-6",
+    "text": "Note: 4851 1463 7435; then 6088-0831-0604-1500; then hygkb.jmq@example.co.in; then AKIAQ0R34FAW8EXAMPLE; then 784196566551469. End.",
+    "expect": [
+      [
+        "AADHAAR",
+        "4851 1463 7435"
+      ],
+      [
+        "CARD",
+        "6088-0831-0604-1500"
+      ],
+      [
+        "EMAIL",
+        "hygkb.jmq@example.co.in"
+      ],
+      [
+        "SECRET",
+        "AKIAQ0R34FAW8EXAMPLE"
+      ],
+      [
+        "EMIRATES_ID",
+        "784196566551469"
+      ]
+    ]
+  },
+  {
+    "name": "mixed-7",
+    "text": "Note: 704382246189; then ghp_EXAMPLEYhokjpFhj568u5GNrYPLsZuR8eboE; then dwgt.luh@example.co.in; then d878:5a09:2337:33e1:861e:ee67:dbca:c9f1; then 936687918250. End.",
+    "expect": [
+      [
+        "AADHAAR",
+        "704382246189"
+      ],
+      [
+        "SECRET",
+        "ghp_EXAMPLEYhokjpFhj568u5GNrYPLsZuR8eboE"
+      ],
+      [
+        "EMAIL",
+        "dwgt.luh@example.co.in"
+      ],
+      [
+        "IP_ADDRESS",
+        "d878:5a09:2337:33e1:861e:ee67:dbca:c9f1"
+      ],
+      [
+        "AADHAAR",
+        "936687918250"
+      ]
+    ]
+  },
+  {
+    "name": "mixed-8",
+    "text": "Note: 2122970441; then LI1740739262050670726; then b11a:bf0d:a955:de6e:4447:6a1a:47e4:6548; then GYCGB6487H. End.",
+    "expect": [
+      [
+        "SAUDI_ID",
+        "2122970441"
+      ],
+      [
+        "IBAN",
+        "LI1740739262050670726"
+      ],
+      [
+        "IP_ADDRESS",
+        "b11a:bf0d:a955:de6e:4447:6a1a:47e4:6548"
+      ],
+      [
+        "IN_PAN",
+        "GYCGB6487H"
+      ]
+    ]
+  },
+  {
+    "name": "mixed-9",
+    "text": "Note: EG713855299158394640967611065; then LU533714436133593281; then tgcoxubgtkv@mail.example.ae; then SO104494079853369539605; then ghp_EXAMPLEMfsleskB65w46ZjUQDzAqgBiDjGzd. End.",
+    "expect": [
+      [
+        "IBAN",
+        "EG713855299158394640967611065"
+      ],
+      [
+        "IBAN",
+        "LU533714436133593281"
+      ],
+      [
+        "EMAIL",
+        "tgcoxubgtkv@mail.example.ae"
+      ],
+      [
+        "IBAN",
+        "SO104494079853369539605"
+      ],
+      [
+        "SECRET",
+        "ghp_EXAMPLEMfsleskB65w46ZjUQDzAqgBiDjGzd"
+      ]
+    ]
+  },
+  {
+    "name": "mixed-10",
+    "text": "Note: LY31471642435119141511215; then 6011551650855527; then 00974 7788 6579; then +91-9390740097; then kcm_ddw@example.com. End.",
+    "expect": [
+      [
+        "IBAN",
+        "LY31471642435119141511215"
+      ],
+      [
+        "CARD",
+        "6011551650855527"
+      ],
+      [
+        "PHONE",
+        "00974 7788 6579"
+      ],
+      [
+        "PHONE",
+        "+91-9390740097"
+      ],
+      [
+        "EMAIL",
+        "kcm_ddw@example.com"
+      ]
+    ]
+  },
+  {
+    "name": "mixed-11",
+    "text": "Note: 784198163394210; then 5890 6046 3877; then 784-1973-6999502-8. End.",
+    "expect": [
+      [
+        "EMIRATES_ID",
+        "784198163394210"
+      ],
+      [
+        "AADHAAR",
+        "5890 6046 3877"
+      ],
+      [
+        "EMIRATES_ID",
+        "784-1973-6999502-8"
+      ]
+    ]
+  },
+  {
+    "name": "mixed-12",
+    "text": "Note: EDCCJ2244Y; then actwmdrgklu@mail.example.ae; then SD5470830668432253; then 923955331997; then ycpafxzigox@example.co.in. End.",
+    "expect": [
+      [
+        "IN_PAN",
+        "EDCCJ2244Y"
+      ],
+      [
+        "EMAIL",
+        "actwmdrgklu@mail.example.ae"
+      ],
+      [
+        "IBAN",
+        "SD5470830668432253"
+      ],
+      [
+        "AADHAAR",
+        "923955331997"
+      ],
+      [
+        "EMAIL",
+        "ycpafxzigox@example.co.in"
+      ]
+    ]
+  },
+  {
+    "name": "mixed-13",
+    "text": "Note: dhx.dsc@example.com; then 5132045811737886; then SJELH3237B; then 2224194585; then 784196344416456. End.",
+    "expect": [
+      [
+        "EMAIL",
+        "dhx.dsc@example.com"
+      ],
+      [
+        "CARD",
+        "5132045811737886"
+      ],
+      [
+        "IN_PAN",
+        "SJELH3237B"
+      ],
+      [
+        "SAUDI_ID",
+        "2224194585"
+      ],
+      [
+        "EMIRATES_ID",
+        "784196344416456"
+      ]
+    ]
+  },
+  {
+    "name": "mixed-14",
+    "text": "Note: 89d7:d8e0:e332:46a8:27fa:8e6f:5dff:cfb6; then 1834599761; then YWGHR2187U; then +971582960538; then 784 1974 9429339 8. End.",
+    "expect": [
+      [
+        "IP_ADDRESS",
+        "89d7:d8e0:e332:46a8:27fa:8e6f:5dff:cfb6"
+      ],
+      [
+        "SAUDI_ID",
+        "1834599761"
+      ],
+      [
+        "IN_PAN",
+        "YWGHR2187U"
+      ],
+      [
+        "PHONE",
+        "+971582960538"
+      ],
+      [
+        "EMIRATES_ID",
+        "784 1974 9429339 8"
+      ]
+    ]
+  },
+  {
+    "name": "mixed-15",
+    "text": "Note: SKPFY6765B; then ooegpma_ezm@example.com; then 534593876282; then 1384002083; then 7051075955. End.",
+    "expect": [
+      [
+        "IN_PAN",
+        "SKPFY6765B"
+      ],
+      [
+        "EMAIL",
+        "ooegpma_ezm@example.com"
+      ],
+      [
+        "AADHAAR",
+        "534593876282"
+      ],
+      [
+        "SAUDI_ID",
+        "1384002083"
+      ],
+      [
+        "PHONE",
+        "7051075955"
+      ]
+    ]
+  },
+  {
+    "name": "mixed-16",
+    "text": "Note: 0529608457; then icasx_mqu@example.com; then wbnn.vdh@example.com; then 8fc3:873b:f601:bc12:77a4:c97c:2250:d582. End.",
+    "expect": [
+      [
+        "PHONE",
+        "0529608457"
+      ],
+      [
+        "EMAIL",
+        "icasx_mqu@example.com"
+      ],
+      [
+        "EMAIL",
+        "wbnn.vdh@example.com"
+      ],
+      [
+        "IP_ADDRESS",
+        "8fc3:873b:f601:bc12:77a4:c97c:2250:d582"
+      ]
+    ]
+  },
+  {
+    "name": "mixed-17",
+    "text": "Note: EG095415426375186268489888171; then 055 318 5885; then AKIARNQGBT0KQEXAMPLE; then 4529538732879252; then ZULFN2847Q; then 1646569085. End.",
+    "expect": [
+      [
+        "IBAN",
+        "EG095415426375186268489888171"
+      ],
+      [
+        "PHONE",
+        "055 318 5885"
+      ],
+      [
+        "SECRET",
+        "AKIARNQGBT0KQEXAMPLE"
+      ],
+      [
+        "CARD",
+        "4529538732879252"
+      ],
+      [
+        "IN_PAN",
+        "ZULFN2847Q"
+      ],
+      [
+        "SAUDI_ID",
+        "1646569085"
+      ]
+    ]
+  },
+  {
+    "name": "mixed-18",
+    "text": "Note: MU81 1417 4910 0581 4900 9790 4353 06; then kohhbkdbh@example.com; then 1974919936. End.",
+    "expect": [
+      [
+        "IBAN",
+        "MU81 1417 4910 0581 4900 9790 4353 06"
+      ],
+      [
+        "EMAIL",
+        "kohhbkdbh@example.com"
+      ],
+      [
+        "SAUDI_ID",
+        "1974919936"
+      ]
+    ]
+  },
+  {
+    "name": "mixed-19",
+    "text": "Note: abh+cft@example.com; then +971 56 790 4767; then NKFAJ2701G; then 4417-9922-9925-7; then +91 65780 46889; then ZTDGJ4046R. End.",
+    "expect": [
+      [
+        "EMAIL",
+        "abh+cft@example.com"
+      ],
+      [
+        "PHONE",
+        "+971 56 790 4767"
+      ],
+      [
+        "IN_PAN",
+        "NKFAJ2701G"
+      ],
+      [
+        "CARD",
+        "4417-9922-9925-7"
+      ],
+      [
+        "PHONE",
+        "+91 65780 46889"
+      ],
+      [
+        "IN_PAN",
+        "ZTDGJ4046R"
+      ]
+    ]
+  },
+  {
+    "name": "mixed-20",
+    "text": "Note: 784-2006-4792707-6; then 5589-4178-2137-3747; then crmqhx_clm@example.co.in; then +91-9010838681; then eyJhbGciOiAiRVMyNTYiLCAidHlwIjogIkpXVCJ9.eyJzdWIiOiAidXNlci0yNjk3MSJ9.4lYZBARM1BxGqV3WKl16iVx9u38F3Kpp. End.",
+    "expect": [
+      [
+        "EMIRATES_ID",
+        "784-2006-4792707-6"
+      ],
+      [
+        "CARD",
+        "5589-4178-2137-3747"
+      ],
+      [
+        "EMAIL",
+        "crmqhx_clm@example.co.in"
+      ],
+      [
+        "PHONE",
+        "+91-9010838681"
+      ],
+      [
+        "SECRET",
+        "eyJhbGciOiAiRVMyNTYiLCAidHlwIjogIkpXVCJ9.eyJzdWIiOiAidXNlci0yNjk3MSJ9.4lYZBARM1BxGqV3WKl16iVx9u38F3Kpp"
+      ]
+    ]
+  },
+  {
+    "name": "mixed-21",
+    "text": "Note: 0555898068; then SM7762692809466459281135096; then eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJzdWIiOiAidXNlci03NzY5OCJ9.KkRxVOggFFFyWdXLdtEKdb9fnFc9YpVd; then 4244 7688 0172 2; then DNSFT9706W; then 308521959606. End.",
+    "expect": [
+      [
+        "PHONE",
+        "0555898068"
+      ],
+      [
+        "IBAN",
+        "SM7762692809466459281135096"
+      ],
+      [
+        "SECRET",
+        "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJzdWIiOiAidXNlci03NzY5OCJ9.KkRxVOggFFFyWdXLdtEKdb9fnFc9YpVd"
+      ],
+      [
+        "CARD",
+        "4244 7688 0172 2"
+      ],
+      [
+        "IN_PAN",
+        "DNSFT9706W"
+      ],
+      [
+        "AADHAAR",
+        "308521959606"
+      ]
+    ]
+  },
+  {
+    "name": "mixed-22",
+    "text": "Note: 183.10.213.155; then 610773471571; then 0554198048; then 784199082638273; then 784 1997 8486998 6; then njewfpuq@example.com. End.",
+    "expect": [
+      [
+        "IP_ADDRESS",
+        "183.10.213.155"
+      ],
+      [
+        "AADHAAR",
+        "610773471571"
+      ],
+      [
+        "PHONE",
+        "0554198048"
+      ],
+      [
+        "EMIRATES_ID",
+        "784199082638273"
+      ],
+      [
+        "EMIRATES_ID",
+        "784 1997 8486998 6"
+      ],
+      [
+        "EMAIL",
+        "njewfpuq@example.com"
+      ]
+    ]
+  },
+  {
+    "name": "mixed-23",
+    "text": "Note: SBKPP6015R; then eryxqbpiqg@example.com; then 3530 0631 8044 7220; then 3755 676643 02887. End.",
+    "expect": [
+      [
+        "IN_PAN",
+        "SBKPP6015R"
+      ],
+      [
+        "EMAIL",
+        "eryxqbpiqg@example.com"
+      ],
+      [
+        "CARD",
+        "3530 0631 8044 7220"
+      ],
+      [
+        "CARD",
+        "3755 676643 02887"
+      ]
+    ]
+  },
+  {
+    "name": "mixed-24",
+    "text": "Note: 3235 1514 3841; then 2367299480; then 5437-2724-2737; then 784196779619954; then 00974 5516 8629; then ghp_EXAMPLEjvMYYKA8PBFyhOAmt7Qw3p01jqt3d. End.",
+    "expect": [
+      [
+        "AADHAAR",
+        "3235 1514 3841"
+      ],
+      [
+        "SAUDI_ID",
+        "2367299480"
+      ],
+      [
+        "AADHAAR",
+        "5437-2724-2737"
+      ],
+      [
+        "EMIRATES_ID",
+        "784196779619954"
+      ],
+      [
+        "PHONE",
+        "00974 5516 8629"
+      ],
+      [
+        "SECRET",
+        "ghp_EXAMPLEjvMYYKA8PBFyhOAmt7Qw3p01jqt3d"
+      ]
+    ]
+  },
+  {
+    "name": "mixed-25",
+    "text": "Note: afdd:82f6:3c42:30de:ffbb:254a:3239:d454; then +91 80752 16294; then 5115 1543 5686 6810; then 2664-0674-3784; then 3442 4340 7704. End.",
+    "expect": [
+      [
+        "IP_ADDRESS",
+        "afdd:82f6:3c42:30de:ffbb:254a:3239:d454"
+      ],
+      [
+        "PHONE",
+        "+91 80752 16294"
+      ],
+      [
+        "CARD",
+        "5115 1543 5686 6810"
+      ],
+      [
+        "AADHAAR",
+        "2664-0674-3784"
+      ],
+      [
+        "AADHAAR",
+        "3442 4340 7704"
+      ]
+    ]
+  },
+  {
+    "name": "mixed-26",
+    "text": "Note: YKVLI9118K; then b0a8:19e4:27bb:dd25:cba1:b98e:9166:6c0b; then 5133 6311 8291 0498; then 342190969634308; then 0560336671. End.",
+    "expect": [
+      [
+        "IN_PAN",
+        "YKVLI9118K"
+      ],
+      [
+        "IP_ADDRESS",
+        "b0a8:19e4:27bb:dd25:cba1:b98e:9166:6c0b"
+      ],
+      [
+        "CARD",
+        "5133 6311 8291 0498"
+      ],
+      [
+        "CARD",
+        "342190969634308"
+      ],
+      [
+        "PHONE",
+        "0560336671"
+      ]
+    ]
+  },
+  {
+    "name": "mixed-27",
+    "text": "Note: GL39 6970 5910 1143 20; then 223.125.53.60; then ghp_EXAMPLECs2EcuwD3lntMWv9v0MaIJAdL1xvK; then CH4818410147807195060; then LC53 1743 2646 5962 1155 9629 1285 4514. End.",
+    "expect": [
+      [
+        "IBAN",
+        "GL39 6970 5910 1143 20"
+      ],
+      [
+        "IP_ADDRESS",
+        "223.125.53.60"
+      ],
+      [
+        "SECRET",
+        "ghp_EXAMPLECs2EcuwD3lntMWv9v0MaIJAdL1xvK"
+      ],
+      [
+        "IBAN",
+        "CH4818410147807195060"
+      ],
+      [
+        "IBAN",
+        "LC53 1743 2646 5962 1155 9629 1285 4514"
+      ]
+    ]
+  },
+  {
+    "name": "mixed-28",
+    "text": "Note: 2439745890; then NRULI7744S; then UOMCF3372E; then 4580-1465-1810-2. End.",
+    "expect": [
+      [
+        "SAUDI_ID",
+        "2439745890"
+      ],
+      [
+        "IN_PAN",
+        "NRULI7744S"
+      ],
+      [
+        "IN_PAN",
+        "UOMCF3372E"
+      ],
+      [
+        "CARD",
+        "4580-1465-1810-2"
+      ]
+    ]
+  },
+  {
+    "name": "mixed-29",
+    "text": "Note: LV79 7399 2396 9256 2445 8; then 578026680937; then sdu_xfg@example.com; then 9978956088; then MD16 9406 8288 1228 5147 4461. End.",
+    "expect": [
+      [
+        "IBAN",
+        "LV79 7399 2396 9256 2445 8"
+      ],
+      [
+        "AADHAAR",
+        "578026680937"
+      ],
+      [
+        "EMAIL",
+        "sdu_xfg@example.com"
+      ],
+      [
+        "PHONE",
+        "9978956088"
+      ],
+      [
+        "IBAN",
+        "MD16 9406 8288 1228 5147 4461"
+      ]
+    ]
+  }
+]

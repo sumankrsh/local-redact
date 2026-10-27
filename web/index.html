@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- This policy must come first. It stops this page's scripts from making any
+       network request: no fetch, XHR, WebSocket, beacon or third-party image. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src data:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; require-trusted-types-for 'script'; trusted-types 'none'">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="color-scheme" content="light dark">
+  <title>local-redact</title>
+  <meta name="description" content="Remove sensitive data from text before you paste it into an LLM. Runs in your browser; nothing is uploaded.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%234B33C9'/%3E%3Crect x='7' y='13' width='18' height='6' rx='2' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="patterns.js" defer></script>
+  <script src="samples.js" defer></script>
+  <script src="engine.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="masthead">
+    <svg class="guilloche" id="guilloche" aria-hidden="true" focusable="false"></svg>
+    <div class="masthead-inner">
+      <div class="brand">
+        <h1 class="wordmark">local-<span class="token token-brand">redact</span></h1>
+        <a class="repo-link" href="https://github.com/sumankrsh/local-redact">Source on GitHub</a>
+      </div>
+      <p class="lede">Remove sensitive data from text before you paste it into an LLM. Runs in your browser; nothing is uploaded.</p>
+      <details class="privacy" id="privacy">
+        <summary><span class="dot" aria-hidden="true"></span><span id="privacy-status">Network access is blocked on this page</span></summary>
+        <div class="privacy-body">
+          <p>This page sets a Content-Security-Policy with <code>connect-src 'none'</code> and <code>default-src 'none'</code>. Your browser enforces it, so the page's own scripts cannot send what you paste anywhere: no fetch, XHR, WebSocket, beacon or third-party image load.</p>
+          <p>To check: open your browser's developer tools, go to the Network tab, and paste some text. After the page and its four scripts load, no requests appear. You can also save this page and use it offline.</p>
+          <p>Limits: browser extensions are not bound by the page's policy, and the copied text is only as safe as where you paste it.</p>
+        </div>
+      </details>
+    </div>
+  </header>
+
+  <main class="app">
+    <section class="toolbar" aria-label="Examples and file input">
+      <div class="examples">
+        <span class="label">Try an example</span>
+        <div class="example-buttons" id="examples"></div>
+      </div>
+      <div class="file-actions">
+        <label class="button button-quiet" for="file-input">Open a text file</label>
+        <input type="file" id="file-input" class="visually-hidden" accept=".txt,.log,.csv,.tsv,.json,.md,.xml,.yaml,.yml,text/*">
+        <button type="button" class="button button-quiet" id="clear">Clear</button>
+      </div>
+    </section>
+
+    <section class="types" aria-labelledby="types-heading">
+      <h2 id="types-heading" class="visually-hidden">What to detect</h2>
+      <div class="chips" id="chips" role="group" aria-label="Types to redact. Press a type to turn it on or off."></div>
+    </section>
+
+    <div class="panes">
+      <section class="pane" aria-labelledby="input-heading">
+        <div class="pane-head">
+          <h2 id="input-heading"><span class="step">1</span>Your text</h2>
+          <div class="segmented" role="tablist" aria-label="Input view">
+            <button type="button" role="tab" id="tab-edit" aria-selected="true" aria-controls="input">Edit</button>
+            <button type="button" role="tab" id="tab-review" aria-selected="false" aria-controls="review">Review highlights</button>
+          </div>
+        </div>
+        <div class="pane-body drop-zone" id="drop-zone">
+          <textarea id="input" spellcheck="false" autocomplete="off" aria-label="Text to redact"
+            placeholder="Paste a log, a claim note or an email here, or drop a text file."></textarea>
+          <div id="review" class="doc review" role="tabpanel" aria-labelledby="tab-review" hidden></div>
+          <div class="drop-hint" aria-hidden="true">Drop to load the file. It stays on this device.</div>
+        </div>
+        <p class="pane-foot" id="review-hint">In review, select a highlight to keep that value (it is added to the allowlist).</p>
+      </section>
+
+      <section class="pane" aria-labelledby="output-heading">
+        <div class="pane-head">
+          <h2 id="output-heading"><span class="step">2</span>What the LLM will see</h2>
+          <button type="button" class="button button-primary" id="copy-output" disabled>Copy redacted text</button>
+        </div>
+        <div class="pane-body">
+          <div id="output" class="doc output" aria-live="polite"></div>
+        </div>
+        <p class="pane-foot" id="summary">Nothing to redact yet.</p>
+      </section>
+    </div>
+
+    <p class="caution">Names and street addresses are not detected. Read the redacted text before you paste it.</p>
+
+    <section class="pane restore" aria-labelledby="restore-heading">
+      <div class="pane-head">
+        <h2 id="restore-heading"><span class="step">3</span>Put the real values back</h2>
+        <button type="button" class="button" id="copy-restored" disabled>Copy restored text</button>
+      </div>
+      <p class="pane-intro">Paste the LLM's answer. Placeholders such as <span class="token">&lt;EMAIL_1&gt;</span> are swapped back for the original values, here in your browser.</p>
+      <div class="restore-grid">
+        <textarea id="answer" spellcheck="false" aria-label="LLM answer with placeholders" placeholder="Paste the model's answer here."></textarea>
+        <div id="restored" class="doc output" aria-live="polite"></div>
+      </div>
+      <p class="pane-foot" id="restore-summary"></p>
+    </section>
+
+    <section class="settings" aria-label="Settings">
+      <details class="panel" id="allow-panel">
+        <summary>Allowlist <span class="count" id="allow-count"></span></summary>
+        <p class="panel-intro">Values that are never redacted, one per line. Matching ignores case. Useful for your own support address or a public phone number.</p>
+        <textarea id="allowlist" spellcheck="false" rows="4" aria-label="Allowlist, one value per line" placeholder="support@example.com"></textarea>
+      </details>
+
+      <details class="panel" id="custom-panel">
+        <summary>Custom patterns <span class="count" id="custom-count"></span></summary>
+        <p class="panel-intro">Add formats this tool does not know, such as your policy or claim numbers. The name becomes the placeholder (<span class="token">&lt;POLICY_NO_1&gt;</span>). Patterns are regular expressions; keep to syntax that also works in Python if you will use them with the CLI.</p>
+        <ul class="custom-list" id="custom-list"></ul>
+        <form class="custom-form" id="custom-form" novalidate>
+          <label>Name <input id="custom-name" placeholder="POLICY_NO" autocomplete="off" spellcheck="false"></label>
+          <label>Pattern <input id="custom-regex" placeholder="POL-[0-9]{4}-[0-9]{6}" autocomplete="off" spellcheck="false"></label>
+          <button type="submit" class="button">Add pattern</button>
+        </form>
+        <p class="error" id="custom-error" role="alert"></p>
+      </details>
+
+      <details class="panel" id="mapping-panel">
+        <summary>Mapping <span class="count" id="mapping-count"></span></summary>
+        <p class="panel-intro">Which placeholder stands for which value. It lives only in this tab; download it if you want to restore an answer later or with the CLI. It holds the real values, so keep the file private.</p>
+        <div class="mapping-actions">
+          <label class="check"><input type="checkbox" id="show-values"> Show values</label>
+          <button type="button" class="button button-quiet" id="download-mapping" disabled>Download mapping</button>
+          <label class="button button-quiet" for="mapping-file">Load a mapping file</label>
+          <input type="file" id="mapping-file" class="visually-hidden" accept=".json,application/json">
+        </div>
+        <table class="mapping" id="mapping-table">
+          <thead><tr><th scope="col">Placeholder</th><th scope="col">Value</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </details>
+
+      <details class="panel" id="export-panel">
+        <summary>Use these settings with the CLI</summary>
+        <p class="panel-intro">Download your type choices, allowlist and custom patterns as JSON, then run <code>local-redact redact --config settings.json file.txt</code>.</p>
+        <button type="button" class="button button-quiet" id="export-settings">Download settings</button>
+      </details>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Built by Suman Mukherjee · <a href="mailto:contactme@mukherjeesuman.com">contactme@mukherjeesuman.com</a> · <a href="https://mukherjeesuman.com">mukherjeesuman.com</a></p>
+    <p class="fineprint">Pattern and checksum based, not a language model. MIT licence. <span id="version"></span></p>
+  </footer>
+</body>
+</html>

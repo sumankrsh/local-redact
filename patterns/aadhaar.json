@@ -1,0 +1,42 @@
+{
+  "id": "AADHAAR",
+  "label": "Aadhaar number",
+  "order": 7,
+  "priority": 90,
+  "region": "India",
+  "validation": "12 digits, first digit 2-9, not a palindrome; Verhoeff check digit",
+  "sources": [
+    "https://github.com/arthurdejong/python-stdnum/blob/master/stdnum/in_/aadhaar.py",
+    "https://web.archive.org/web/20140611025606/http://uidai.gov.in/UID_PDF/Working_Papers/A_UID_Numbering_Scheme.pdf",
+    "https://learn.microsoft.com/en-us/purview/sit-defn-india-unique-identification-number"
+  ],
+  "notes": "Same checks as python-stdnum: 12 digits, first digit 2-9, not a palindrome, Verhoeff check digit (recommended in UIDAI's numbering-scheme paper). About 1 in 10 random 12-digit numbers starting 2-9 also pass.",
+  "patterns": [
+    {
+      "name": "aadhaar",
+      "regex": "(?<![0-9A-Za-z])(?<![0-9][ -])[2-9][0-9]{3}([ -]?)[0-9]{4}\\1[0-9]{4}(?![0-9A-Za-z]|[ -][0-9])",
+      "validator": "verhoeff",
+      "params": {
+        "min_length": 12,
+        "max_length": 12,
+        "prefixes": [
+          "2-9"
+        ],
+        "reject_palindromes": true
+      }
+    }
+  ],
+  "examples": {
+    "valid": [
+      "2345 6789 0124",
+      "987654321012",
+      "2345-6789-0124"
+    ],
+    "invalid": [
+      "2345 6789 0125",
+      "1234 5678 9012",
+      "2345 67890124",
+      "2345 6789 0124 5678"
+    ]
+  }
+}

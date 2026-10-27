@@ -1,0 +1,30 @@
+{
+  "id": "IN_PAN",
+  "label": "Indian PAN",
+  "order": 8,
+  "priority": 80,
+  "region": "India",
+  "validation": "Strict format: AAAAA9999A, 4th letter must be a valid holder type",
+  "sources": [
+    "https://www.incometaxindia.gov.in/w/how-pan-is-formed-and-how-it-gets-its-unique-identity-",
+    "https://github.com/arthurdejong/python-stdnum/blob/master/stdnum/in_/pan.py"
+  ],
+  "notes": "4th letter is the holder type: A, B, C, F, G, H, J, L, P or T (Income Tax Department). The last letter is a check character, but its algorithm is not published, so it is not verified.",
+  "patterns": [
+    {
+      "name": "pan",
+      "regex": "(?<![0-9A-Za-z])[A-Z]{3}[ABCFGHJLPT][A-Z][0-9]{4}[A-Z](?![0-9A-Za-z])"
+    }
+  ],
+  "examples": {
+    "valid": [
+      "ABCPK1234D",
+      "AAACX9999Z"
+    ],
+    "invalid": [
+      "ABCDE1234F",
+      "abcpk1234d",
+      "ABCPK12345"
+    ]
+  }
+}

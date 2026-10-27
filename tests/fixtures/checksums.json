@@ -1,0 +1,18 @@
+{
+  "_comment": "Known vectors from published sources, used by both test suites.",
+  "luhn": {
+    "source": "https://en.wikipedia.org/wiki/Luhn_algorithm (79927398713) and https://docs.stripe.com/testing (card numbers)",
+    "valid": ["79927398713", "4242424242424242", "5555555555554444", "378282246310005", "6011111111111117", "3566002020360505", "36227206271667", "6200000000000005", "2223003122003222"],
+    "invalid": ["79927398710", "4242424242424241", "1234567812345678"]
+  },
+  "verhoeff": {
+    "source": "https://en.wikipedia.org/wiki/Verhoeff_algorithm (236 -> check digit 3)",
+    "valid": ["2363"],
+    "invalid": ["2364", "2360", "3263"]
+  },
+  "mod97": {
+    "source": "SWIFT IBAN registry examples, https://www.swift.com/swift-resource/11971/download",
+    "valid": ["AE070331234567890123456", "SA0380000000608010167519", "QA58DOHB00001234567890ABCDEFG", "KW81CBKU0000000000001234560101", "BH67BMAG00001299123456", "OM810180000001299123456", "GB29NWBK60161331926819", "DE89370400440532013000", "FR1420041010050500013M02606"],
+    "invalid": ["AE080331234567890123456", "GB29NWBK60161331926818", "DE89370400440532013001"]
+  }
+}

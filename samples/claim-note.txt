@@ -1,0 +1,17 @@
+Claim note: CLM-2026-0004417 (motor, own damage)
+Policy: POL-2025-118204    Branch: Dubai
+
+Claimant: Layla Haddad, Emirates ID 784-1990-1234567-6, mobile 050 000 1234,
+email layla.haddad@example.com.
+
+Vehicle hit at a roundabout on 12 Oct. Third-party driver: Omar Al-Qahtani,
+Saudi resident, Iqama 2987654320, phone +966 55 000 0412.
+
+Witness: Priya Nair, visiting from India, Aadhaar 2345 6789 0124,
+PAN ABCPN1234K, mobile +91 90000 01234.
+
+Repair estimate AED 8,400 from the approved garage. Excess AED 500 collected
+by card on the call (5555 5555 5555 4444).
+
+Settle to the claimant's account: IBAN AE07 0331 2345 6789 0123 456.
+Next step: ask for the police report and photos; call back after 3 pm.

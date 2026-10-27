@@ -1,0 +1,190 @@
+[
+  {
+    "id": "support-log",
+    "detections": [
+      [
+        "EMAIL",
+        "layla.haddad@example.com",
+        "email"
+      ],
+      [
+        "IP_ADDRESS",
+        "203.0.113.45",
+        "ipv4"
+      ],
+      [
+        "EMAIL",
+        "layla.haddad@example.com",
+        "email"
+      ],
+      [
+        "IP_ADDRESS",
+        "2001:db8:85a3::8a2e:370:7334",
+        "ipv6"
+      ],
+      [
+        "SECRET",
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZ2VudC00NDE3Iiwicm9sZSI6ImNsYWltcyJ9.ZXhhbXBsZS1zaWduYXR1cmUtb25seQ",
+        "jwt"
+      ],
+      [
+        "CARD",
+        "4111 1111 1111 1111",
+        "grouped_4"
+      ],
+      [
+        "PHONE",
+        "+971 50 000 1234",
+        "international"
+      ],
+      [
+        "SECRET",
+        "AKIAIOSFODNN7EXAMPLE",
+        "aws_access_key_id"
+      ],
+      [
+        "IP_ADDRESS",
+        "10.24.3.17",
+        "ipv4"
+      ],
+      [
+        "EMAIL",
+        "ravi.menon@example.org",
+        "email"
+      ],
+      [
+        "PHONE",
+        "98765 43210",
+        "india_mobile_local"
+      ]
+    ],
+    "redacted": "2026-10-14T09:12:03Z INFO  api-gateway request_id=7f3a2c user=<EMAIL_1> ip=<IP_ADDRESS_1> path=/v1/claims/upload status=200\n2026-10-14T09:12:04Z WARN  auth token refresh failed for user=<EMAIL_1> client_ip=<IP_ADDRESS_2>\n2026-10-14T09:12:04Z DEBUG headers: Authorization: Bearer <SECRET_1>\n2026-10-14T09:12:05Z ERROR payment-service charge declined card=<CARD_1> amount=AED 1,250.00 contact=<PHONE_1>\n2026-10-14T09:12:07Z ERROR s3-sync AccessDenied with key <SECRET_2> from host <IP_ADDRESS_3>\n2026-10-14T09:12:09Z INFO  support ticket SUP-48213 opened by <EMAIL_2>, callback <PHONE_2>\n2026-10-14T09:12:11Z INFO  healthcheck ok version=2.14.0 uptime=86400s\n"
+  },
+  {
+    "id": "claim-note",
+    "detections": [
+      [
+        "CLAIM_NO",
+        "CLM-2026-0004417",
+        "CLAIM_NO"
+      ],
+      [
+        "POLICY_NO",
+        "POL-2025-118204",
+        "POLICY_NO"
+      ],
+      [
+        "EMIRATES_ID",
+        "784-1990-1234567-6",
+        "emirates_id"
+      ],
+      [
+        "PHONE",
+        "050 000 1234",
+        "gcc_mobile_local"
+      ],
+      [
+        "EMAIL",
+        "layla.haddad@example.com",
+        "email"
+      ],
+      [
+        "SAUDI_ID",
+        "2987654320",
+        "saudi_id"
+      ],
+      [
+        "PHONE",
+        "+966 55 000 0412",
+        "international"
+      ],
+      [
+        "AADHAAR",
+        "2345 6789 0124",
+        "aadhaar"
+      ],
+      [
+        "IN_PAN",
+        "ABCPN1234K",
+        "pan"
+      ],
+      [
+        "PHONE",
+        "+91 90000 01234",
+        "international"
+      ],
+      [
+        "CARD",
+        "5555 5555 5555 4444",
+        "grouped_4"
+      ],
+      [
+        "IBAN",
+        "AE07 0331 2345 6789 0123 456",
+        "iban"
+      ]
+    ],
+    "redacted": "Claim note: <CLAIM_NO_1> (motor, own damage)\nPolicy: <POLICY_NO_1>    Branch: Dubai\n\nClaimant: Layla Haddad, Emirates ID <EMIRATES_ID_1>, mobile <PHONE_1>,\nemail <EMAIL_1>.\n\nVehicle hit at a roundabout on 12 Oct. Third-party driver: Omar Al-Qahtani,\nSaudi resident, Iqama <SAUDI_ID_1>, phone <PHONE_2>.\n\nWitness: Priya Nair, visiting from India, Aadhaar <AADHAAR_1>,\nPAN <IN_PAN_1>, mobile <PHONE_3>.\n\nRepair estimate AED 8,400 from the approved garage. Excess AED 500 collected\nby card on the call (<CARD_1>).\n\nSettle to the claimant's account: IBAN <IBAN_1>.\nNext step: ask for the police report and photos; call back after 3 pm.\n"
+  },
+  {
+    "id": "email-thread",
+    "detections": [
+      [
+        "EMAIL",
+        "ravi.menon@example.org",
+        "email"
+      ],
+      [
+        "EMAIL",
+        "claims-support@example.net",
+        "email"
+      ],
+      [
+        "AADHAAR",
+        "9876 5432 1012",
+        "aadhaar"
+      ],
+      [
+        "IN_PAN",
+        "ABCPM5678Q",
+        "pan"
+      ],
+      [
+        "PHONE",
+        "+91 98765 43210",
+        "international"
+      ],
+      [
+        "CARD",
+        "4242 4242 4242 4242",
+        "grouped_4"
+      ],
+      [
+        "EMAIL",
+        "claims-support@example.net",
+        "email"
+      ],
+      [
+        "PHONE",
+        "+971 4 000 0000",
+        "international"
+      ],
+      [
+        "EMAIL",
+        "noura.alharbi@example.com",
+        "email"
+      ],
+      [
+        "SAUDI_ID",
+        "1234567897",
+        "saudi_id"
+      ],
+      [
+        "IBAN",
+        "SA03 8000 0000 6080 1016 7519",
+        "iban"
+      ]
+    ],
+    "redacted": "From: Ravi Menon <<EMAIL_1>>\nTo: Claims Support <<EMAIL_2>>\nSubject: Re: Reimbursement for hospital stay\n\nHi team,\n\nFollowing up on my reimbursement claim. My details again:\nAadhaar <AADHAAR_1>, PAN <IN_PAN_1>, mobile <PHONE_1>.\nI paid the deposit with my card <CARD_1> (please don't keep it on file).\n\nThanks,\nRavi\n\n> On 13 Oct 2026, Claims Support <<EMAIL_2>> wrote:\n> Dear Mr Menon, we need the discharge summary. Our Dubai office can also\n> reach you on <PHONE_2>.\n>\n> ---------- Forwarded message ----------\n> From: Noura Al-Harbi <<EMAIL_3>>\n> Your employer's Riyadh office confirmed the corporate cover. Their HR\n> contact gave Saudi ID <SAUDI_ID_1> for the policyholder and asked for the\n> refund to go to <IBAN_1>.\n"
+  }
+]

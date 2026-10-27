@@ -1,0 +1,302 @@
+[
+  {
+    "name": "the longer match wins an overlap (email contains a phone)",
+    "text": "Write to +971501234567@example.com today",
+    "expect": [
+      [
+        "EMAIL",
+        "+971501234567@example.com"
+      ]
+    ]
+  },
+  {
+    "name": "custom pattern containing a built-in match wins",
+    "text": "Member M-1234567897 renewed",
+    "options": {
+      "custom": [
+        {
+          "type": "MEMBER_ID",
+          "regex": "M-[0-9]{10}"
+        }
+      ]
+    },
+    "expect": [
+      [
+        "MEMBER_ID",
+        "M-1234567897"
+      ]
+    ],
+    "redacted": "Member <MEMBER_ID_1> renewed"
+  },
+  {
+    "name": "same span: priority breaks the tie (custom beats built-in)",
+    "text": "Policy 1234567897 is active",
+    "options": {
+      "custom": [
+        {
+          "type": "POLICY_NO",
+          "regex": "[12][0-9]{9}"
+        }
+      ]
+    },
+    "expect": [
+      [
+        "POLICY_NO",
+        "1234567897"
+      ]
+    ]
+  },
+  {
+    "name": "a card's first 12 digits are not taken as an Aadhaar",
+    "text": "card 5518 3557 7295 8974 declined",
+    "expect": []
+  },
+  {
+    "name": "allowlist is case-insensitive and exact",
+    "text": "From Support@Example.com to layla.haddad@example.com",
+    "options": {
+      "allowlist": [
+        "support@example.com"
+      ]
+    },
+    "expect": [
+      [
+        "EMAIL",
+        "layla.haddad@example.com"
+      ]
+    ],
+    "redacted": "From Support@Example.com to <EMAIL_1>"
+  },
+  {
+    "name": "types filter",
+    "text": "layla@example.com, +971 50 000 1234, 784-1990-1234567-6",
+    "options": {
+      "types": [
+        "EMAIL",
+        "EMIRATES_ID"
+      ]
+    },
+    "expect": [
+      [
+        "EMAIL",
+        "layla@example.com"
+      ],
+      [
+        "EMIRATES_ID",
+        "784-1990-1234567-6"
+      ]
+    ]
+  },
+  {
+    "name": "same value, same placeholder",
+    "text": "a@example.com wrote to b@example.com, then a@example.com again",
+    "expect": [
+      [
+        "EMAIL",
+        "a@example.com"
+      ],
+      [
+        "EMAIL",
+        "b@example.com"
+      ],
+      [
+        "EMAIL",
+        "a@example.com"
+      ]
+    ],
+    "redacted": "<EMAIL_1> wrote to <EMAIL_2>, then <EMAIL_1> again"
+  },
+  {
+    "name": "placeholders already in the text are never reused",
+    "text": "Template says <EMAIL_1>; real one is a@example.com",
+    "expect": [
+      [
+        "EMAIL",
+        "a@example.com"
+      ]
+    ],
+    "redacted": "Template says <EMAIL_1>; real one is <EMAIL_2>"
+  },
+  {
+    "name": "existing mapping keeps numbering",
+    "text": "y@example.com and x@example.com",
+    "mapping": {
+      "<EMAIL_1>": "x@example.com"
+    },
+    "expect": [
+      [
+        "EMAIL",
+        "y@example.com"
+      ],
+      [
+        "EMAIL",
+        "x@example.com"
+      ]
+    ],
+    "redacted": "<EMAIL_2> and <EMAIL_1>"
+  },
+  {
+    "name": "spaced IBAN followed by capitals is trimmed to the registry length",
+    "text": "PAY TO AE07 0331 2345 6789 0123 456 IS CORRECT",
+    "expect": [
+      [
+        "IBAN",
+        "AE07 0331 2345 6789 0123 456"
+      ]
+    ]
+  },
+  {
+    "name": "IBAN that is too long is rejected",
+    "text": "AE070331234567890123456789",
+    "expect": []
+  },
+  {
+    "name": "Arabic text around an Emirates ID",
+    "text": "رقم الهوية 784-1990-1234567-6 شكرا",
+    "expect": [
+      [
+        "EMIRATES_ID",
+        "784-1990-1234567-6"
+      ]
+    ]
+  },
+  {
+    "name": "emoji before an email (offsets differ between languages, values do not)",
+    "text": "📧 layla@example.com 👍",
+    "expect": [
+      [
+        "EMAIL",
+        "layla@example.com"
+      ]
+    ],
+    "redacted": "📧 <EMAIL_1> 👍"
+  },
+  {
+    "name": "Arabic-Indic digits are not detected (known limit)",
+    "text": "٧٨٤-١٩٩٠-١٢٣٤٥٦٧-٦",
+    "expect": []
+  },
+  {
+    "name": "times, MAC addresses, versions and C++ are not IP addresses",
+    "text": "at 12:30:45 mac 00:1A:2B:3C:4D:5E version v2.14.0 code std::vector and ::1",
+    "expect": []
+  },
+  {
+    "name": "dotted version with four parts is a valid IPv4 (known limit)",
+    "text": "build 1.2.3.4",
+    "expect": [
+      [
+        "IP_ADDRESS",
+        "1.2.3.4"
+      ]
+    ]
+  },
+  {
+    "name": "IPv6 with embedded IPv4",
+    "text": "peer ::ffff:192.0.2.128 connected",
+    "expect": [
+      [
+        "IP_ADDRESS",
+        "::ffff:192.0.2.128"
+      ]
+    ]
+  },
+  {
+    "name": "bearer token and JWT give one SECRET",
+    "text": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIn0.c2ln",
+    "expect": [
+      [
+        "SECRET",
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIn0.c2ln"
+      ]
+    ]
+  },
+  {
+    "name": "opaque bearer token",
+    "text": "curl -H 'Authorization: Bearer abcDEF123456ghiJKL789012mno' https://api.example.com",
+    "expect": [
+      [
+        "SECRET",
+        "abcDEF123456ghiJKL789012mno"
+      ]
+    ]
+  },
+  {
+    "name": "private key block across lines",
+    "text": "key:\n-----BEGIN RSA PRIVATE KEY-----\nMIIEowIBAAKCAQEAexample\nexamplelines==\n-----END RSA PRIVATE KEY-----\ndone",
+    "expect": [
+      [
+        "SECRET",
+        "-----BEGIN RSA PRIVATE KEY-----\nMIIEowIBAAKCAQEAexample\nexamplelines==\n-----END RSA PRIVATE KEY-----"
+      ]
+    ],
+    "redacted": "key:\n<SECRET_1>\ndone"
+  },
+  {
+    "name": "phone in brackets keeps the brackets",
+    "text": "(call +971 50 000 1234)",
+    "expect": [
+      [
+        "PHONE",
+        "+971 50 000 1234"
+      ]
+    ],
+    "redacted": "(call <PHONE_1>)"
+  },
+  {
+    "name": "phone followed by a single digit word",
+    "text": "+971 50 000 1234 2 times",
+    "expect": [
+      [
+        "PHONE",
+        "+971 50 000 1234"
+      ]
+    ]
+  },
+  {
+    "name": "card with mixed separators is not a card",
+    "text": "4242 4242-4242 4242",
+    "expect": []
+  },
+  {
+    "name": "PAN must be upper case with a valid holder letter",
+    "text": "ABCPK1234D abcpk1234d ABCDE1234F",
+    "expect": [
+      [
+        "IN_PAN",
+        "ABCPK1234D"
+      ]
+    ]
+  },
+  {
+    "name": "Saudi resident ID (Iqama)",
+    "text": "Iqama: 2987654320",
+    "expect": [
+      [
+        "SAUDI_ID",
+        "2987654320"
+      ]
+    ]
+  },
+  {
+    "name": "empty text",
+    "text": "",
+    "expect": [],
+    "redacted": ""
+  },
+  {
+    "name": "CRLF line endings are kept",
+    "text": "a@example.com\r\nb@example.com\r\n",
+    "expect": [
+      [
+        "EMAIL",
+        "a@example.com"
+      ],
+      [
+        "EMAIL",
+        "b@example.com"
+      ]
+    ],
+    "redacted": "<EMAIL_1>\r\n<EMAIL_2>\r\n"
+  }
+]

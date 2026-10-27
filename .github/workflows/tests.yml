@@ -1,0 +1,60 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12", "3.13", "3.14"]
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install the package
+        run: python -m pip install ".[test]"
+      - name: Run pytest
+        run: python -m pytest -q
+      - name: Use the installed CLI outside the repo
+        working-directory: ${{ runner.temp }}
+        run: |
+          local-redact types
+          out=$(echo "Emirates ID 784-1990-1234567-6" | local-redact redact -q)
+          test "$out" = "Emirates ID <EMIRATES_ID_1>"
+
+  javascript:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version: ["22", "24"]
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Web bundle matches patterns/ and samples/
+        run: node scripts/build-web.mjs --check
+      - name: Run node:test
+        run: node --test tests/js/engine.test.js
+
+  fixtures:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+      - name: Generated fixtures are up to date
+        run: |
+          python scripts/generate_fixtures.py
+          git diff --exit-code tests/fixtures
